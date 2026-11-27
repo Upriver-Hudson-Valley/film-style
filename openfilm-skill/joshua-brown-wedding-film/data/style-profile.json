@@ -1,0 +1,508 @@
+{
+  "schema_version": "1.0",
+  "generator_version": "0.1.0",
+  "film_count": 17,
+  "genre": "wedding",
+  "genre_display_name": "wedding film",
+  "genre_extensions": {},
+  "duration": {
+    "target_min_sec": 220.2,
+    "target_max_sec": 459.0,
+    "target_median_sec": 359.0,
+    "target_avg_sec": 355.0
+  },
+  "clip_counts": {
+    "min": 85,
+    "max": 177,
+    "avg": 145.8
+  },
+  "pacing": {
+    "target_avg_clip_sec": 2.44,
+    "target_median_clip_sec": 1.75,
+    "min_clip_sec": 0.33,
+    "max_clip_sec": 58.6,
+    "decile_curve": [
+      2.25,
+      2.06,
+      2.23,
+      1.97,
+      2.13,
+      2.13,
+      1.93,
+      2.43,
+      3.33,
+      3.95
+    ],
+    "std_dev_sec": 3.18
+  },
+  "transitions": {
+    "hard_cut_pct": 60.2,
+    "dissolve_pct": 24.5,
+    "fade_pct": 0.6,
+    "still_hold_pct": 14.7,
+    "avg_dissolves_per_film": 35.9,
+    "avg_still_holds_per_film": 21.5
+  },
+  "audio": {
+    "present": true,
+    "music_only_pct_target": 77.95,
+    "speech_over_music_pct_target": 0.0,
+    "ambient_pct_target": 2.65,
+    "first_speech_at_pct_target": 10.74,
+    "first_speech_at_sec_target": 42.39,
+    "speech_segments_per_film_target": 5.65,
+    "avg_speech_segment_sec_target": 8.39,
+    "longest_speech_segment_sec_target": 19.1
+  },
+  "color": {
+    "present": true,
+    "films_analyzed": 17,
+    "mean_luminance": 94.1,
+    "mean_contrast": 55.3,
+    "mean_warm_cool": 0.218,
+    "mean_saturation": 88.4,
+    "dominant_palette": [
+      {
+        "hex": "#000000",
+        "weight": 0.222
+      },
+      {
+        "hex": "#100f11",
+        "weight": 0.017
+      },
+      {
+        "hex": "#020403",
+        "weight": 0.0155
+      },
+      {
+        "hex": "#0f0f0a",
+        "weight": 0.0142
+      },
+      {
+        "hex": "#12110b",
+        "weight": 0.014
+      },
+      {
+        "hex": "#1b1b1b",
+        "weight": 0.0139
+      },
+      {
+        "hex": "#191713",
+        "weight": 0.0132
+      },
+      {
+        "hex": "#171312",
+        "weight": 0.0121
+      }
+    ],
+    "tone_labels_seen": {
+      "mid-key \u00b7 warm": 12,
+      "low-key \u00b7 warm": 2,
+      "low-key \u00b7 neutral": 1,
+      "mid-key \u00b7 neutral": 1,
+      "mid-key \u00b7 neutral \u00b7 desaturated": 1
+    }
+  },
+  "shot_mix": {
+    "labeled_clips": 0,
+    "distribution": {},
+    "dominant": null
+  },
+  "music": {
+    "present": true,
+    "target_tempo_range_bpm": [
+      80.7,
+      184.6
+    ],
+    "avg_tempo_bpm": 115.6,
+    "common_keys": [
+      {
+        "key": "D",
+        "count": 3
+      },
+      {
+        "key": "E",
+        "count": 3
+      },
+      {
+        "key": "A#",
+        "count": 2
+      }
+    ],
+    "cut_on_beat_pct_target": 19.8
+  },
+  "scenes": {
+    "portraits": {
+      "occurrences": 61,
+      "pct_of_total_runtime": 15.3,
+      "avg_duration_sec": 15.12,
+      "avg_clip_count": 5.5,
+      "avg_clip_duration_sec": 2.42
+    },
+    "dancing": {
+      "occurrences": 58,
+      "pct_of_total_runtime": 10.5,
+      "avg_duration_sec": 10.97,
+      "avg_clip_count": 2.8,
+      "avg_clip_duration_sec": 3.23
+    },
+    "getting_ready": {
+      "occurrences": 50,
+      "pct_of_total_runtime": 9.5,
+      "avg_duration_sec": 11.51,
+      "avg_clip_count": 5.1,
+      "avg_clip_duration_sec": 2.12
+    },
+    "cocktail_hour": {
+      "occurrences": 44,
+      "pct_of_total_runtime": 7.7,
+      "avg_duration_sec": 10.55,
+      "avg_clip_count": 5.3,
+      "avg_clip_duration_sec": 1.81
+    },
+    "speeches": {
+      "occurrences": 42,
+      "pct_of_total_runtime": 6.2,
+      "avg_duration_sec": 8.97,
+      "avg_clip_count": 3.5,
+      "avg_clip_duration_sec": 2.21
+    },
+    "ceremony": {
+      "occurrences": 48,
+      "pct_of_total_runtime": 5.8,
+      "avg_duration_sec": 7.29,
+      "avg_clip_count": 4.3,
+      "avg_clip_duration_sec": 1.53
+    },
+    "other": {
+      "occurrences": 43,
+      "pct_of_total_runtime": 5.1,
+      "avg_duration_sec": 7.2,
+      "avg_clip_count": 3.5,
+      "avg_clip_duration_sec": 1.83
+    },
+    "ceremony_vows": {
+      "occurrences": 28,
+      "pct_of_total_runtime": 5.1,
+      "avg_duration_sec": 10.92,
+      "avg_clip_count": 5.0,
+      "avg_clip_duration_sec": 1.83
+    },
+    "first_dance": {
+      "occurrences": 43,
+      "pct_of_total_runtime": 4.6,
+      "avg_duration_sec": 6.51,
+      "avg_clip_count": 2.3,
+      "avg_clip_duration_sec": 2.51
+    },
+    "details": {
+      "occurrences": 21,
+      "pct_of_total_runtime": 4.4,
+      "avg_duration_sec": 12.78,
+      "avg_clip_count": 6.0,
+      "avg_clip_duration_sec": 1.93
+    },
+    "establishing": {
+      "occurrences": 27,
+      "pct_of_total_runtime": 4.2,
+      "avg_duration_sec": 9.49,
+      "avg_clip_count": 3.9,
+      "avg_clip_duration_sec": 2.66
+    },
+    "first_look": {
+      "occurrences": 34,
+      "pct_of_total_runtime": 4.1,
+      "avg_duration_sec": 7.36,
+      "avg_clip_count": 3.7,
+      "avg_clip_duration_sec": 1.7
+    },
+    "ceremony_processional": {
+      "occurrences": 43,
+      "pct_of_total_runtime": 3.9,
+      "avg_duration_sec": 5.52,
+      "avg_clip_count": 3.1,
+      "avg_clip_duration_sec": 1.74
+    },
+    "reception_entrance": {
+      "occurrences": 14,
+      "pct_of_total_runtime": 3.0,
+      "avg_duration_sec": 12.94,
+      "avg_clip_count": 3.9,
+      "avg_clip_duration_sec": 4.1
+    },
+    "transition": {
+      "occurrences": 7,
+      "pct_of_total_runtime": 2.5,
+      "avg_duration_sec": 21.31,
+      "avg_clip_count": 7.3,
+      "avg_clip_duration_sec": 2.43
+    },
+    "cake_cutting": {
+      "occurrences": 24,
+      "pct_of_total_runtime": 2.4,
+      "avg_duration_sec": 6.01,
+      "avg_clip_count": 1.7,
+      "avg_clip_duration_sec": 3.18
+    },
+    "toasts": {
+      "occurrences": 14,
+      "pct_of_total_runtime": 2.2,
+      "avg_duration_sec": 9.55,
+      "avg_clip_count": 3.4,
+      "avg_clip_duration_sec": 2.06
+    },
+    "ceremony_recessional": {
+      "occurrences": 11,
+      "pct_of_total_runtime": 1.7,
+      "avg_duration_sec": 9.2,
+      "avg_clip_count": 3.4,
+      "avg_clip_duration_sec": 2.16
+    },
+    "send_off": {
+      "occurrences": 15,
+      "pct_of_total_runtime": 1.5,
+      "avg_duration_sec": 6.22,
+      "avg_clip_count": 2.0,
+      "avg_clip_duration_sec": 2.07
+    }
+  },
+  "structure": {
+    "opening": {
+      "first_cut_at_sec_target": 4.68,
+      "first_5_clips_avg_duration_sec_target": 2.67
+    },
+    "closing": {
+      "last_5_clips_avg_duration_sec_target": 4.72,
+      "fade_to_black_ratio": 0.24
+    }
+  },
+  "rules": [
+    "Target average clip duration 2.44s (\u03c3 3.18). Range: 0.3s \u2013 58.6s.",
+    "Total runtime should land in 220s \u2013 459s (median 359s).",
+    "60% hard cuts. 24% dissolves (~36 per film). 15% still-holds (boundaries between motion video and held photographs, ~22 per film).",
+    "Hold music alone before any speech for the first 11% of the film (~42s).",
+    "Lean warm in grade (warm/cool index +0.22). Mean luminance 94/255, contrast \u03c3 55.",
+    "Music tempo lands 81\u2013185 BPM (avg 116).",
+    "Land 20% of cuts on a music beat (within ~60 ms tolerance).",
+    "Pacing varies by scene: reception entrance cuts slowest (4.1s avg), ceremony fastest (1.5s avg).",
+    "Hold the first shot for ~4.7s before the first cut."
+  ],
+  "source_films": [
+    {
+      "filename": "Amanda_and_Kenton.mp4",
+      "duration_sec": 382.633333,
+      "clips": 154,
+      "avg_clip_sec": 2.48,
+      "metadata": {
+        "venue": "barn",
+        "season": "autumn",
+        "time_of_day": "afternoon",
+        "ceremony": "civil",
+        "weather": "overcast"
+      }
+    },
+    {
+      "filename": "Amelia_and_Omar.mp4",
+      "duration_sec": 392.405,
+      "clips": 133,
+      "avg_clip_sec": 2.95,
+      "metadata": {
+        "venue": "estate",
+        "season": "summer",
+        "time_of_day": "afternoon",
+        "ceremony": "civil",
+        "weather": "sunny"
+      }
+    },
+    {
+      "filename": "Ashley_and_Luke.mp4",
+      "duration_sec": 357.801667,
+      "clips": 139,
+      "avg_clip_sec": 2.57,
+      "metadata": {
+        "venue": "barn",
+        "season": "autumn",
+        "time_of_day": "afternoon",
+        "ceremony": "civil",
+        "weather": "overcast"
+      }
+    },
+    {
+      "filename": "Autumn_and_Ketan.mp4",
+      "duration_sec": 400.746667,
+      "clips": 149,
+      "avg_clip_sec": 2.69,
+      "metadata": {
+        "venue": "estate",
+        "season": "autumn",
+        "time_of_day": "afternoon",
+        "ceremony": "civil",
+        "weather": "sunny"
+      }
+    },
+    {
+      "filename": "Becca_and_Jason.mp4",
+      "duration_sec": 359.21,
+      "clips": 166,
+      "avg_clip_sec": 2.16,
+      "metadata": {
+        "venue": "indoor",
+        "season": "summer",
+        "time_of_day": "golden_hour",
+        "ceremony": "spiritual",
+        "weather": "rainy"
+      }
+    },
+    {
+      "filename": "Carrie_and_Rose.mp4",
+      "duration_sec": 373.588333,
+      "clips": 177,
+      "avg_clip_sec": 2.11,
+      "metadata": {
+        "venue": "outdoor",
+        "season": "spring",
+        "time_of_day": "afternoon",
+        "ceremony": "civil",
+        "weather": "overcast"
+      }
+    },
+    {
+      "filename": "Danielle_and_Anthony.mp4",
+      "duration_sec": 426.516667,
+      "clips": 149,
+      "avg_clip_sec": 2.86,
+      "metadata": {
+        "venue": "outdoor",
+        "season": "autumn",
+        "time_of_day": "golden_hour",
+        "ceremony": "civil",
+        "weather": "sunny"
+      }
+    },
+    {
+      "filename": "Isabelle_and_Michael.mp4",
+      "duration_sec": 458.965,
+      "clips": 166,
+      "avg_clip_sec": 2.76,
+      "metadata": {
+        "venue": "estate",
+        "season": "autumn",
+        "time_of_day": "evening",
+        "ceremony": "civil"
+      }
+    },
+    {
+      "filename": "Jess_and_John.mp4",
+      "duration_sec": 231.231667,
+      "clips": 103,
+      "avg_clip_sec": 2.24,
+      "metadata": {
+        "venue": "indoor",
+        "season": "autumn",
+        "time_of_day": "evening",
+        "ceremony": "civil"
+      }
+    },
+    {
+      "filename": "Juliette_and_Andrew.mp4",
+      "duration_sec": 220.223333,
+      "clips": 85,
+      "avg_clip_sec": 2.59,
+      "metadata": {
+        "venue": "estate",
+        "season": "spring",
+        "time_of_day": "afternoon",
+        "ceremony": "civil",
+        "weather": "overcast"
+      }
+    },
+    {
+      "filename": "Lizzie_and_Justin.mp4",
+      "duration_sec": 323.54,
+      "clips": 161,
+      "avg_clip_sec": 2.01,
+      "metadata": {
+        "venue": "barn",
+        "season": "autumn",
+        "time_of_day": "golden_hour",
+        "ceremony": "civil",
+        "weather": "sunny"
+      }
+    },
+    {
+      "filename": "Maddie_Max_final.mp4",
+      "duration_sec": 400.233333,
+      "clips": 157,
+      "avg_clip_sec": 2.55,
+      "metadata": {
+        "ceremony": "civil",
+        "weather": "sunny",
+        "season": "summer"
+      }
+    },
+    {
+      "filename": "Marlene_and_David.mp4",
+      "duration_sec": 352.575,
+      "clips": 146,
+      "avg_clip_sec": 2.41,
+      "metadata": {
+        "venue": "outdoor",
+        "season": "summer",
+        "time_of_day": "afternoon",
+        "ceremony": "religious",
+        "weather": "overcast"
+      }
+    },
+    {
+      "filename": "Olivia_and_Marc.mp4",
+      "duration_sec": 357.205,
+      "clips": 163,
+      "avg_clip_sec": 2.19,
+      "metadata": {
+        "venue": "barn",
+        "season": "summer",
+        "ceremony": "civil",
+        "weather": "sunny"
+      }
+    },
+    {
+      "filename": "Rachel_and_Jack.mp4",
+      "duration_sec": 358.996667,
+      "clips": 136,
+      "avg_clip_sec": 2.64,
+      "metadata": {
+        "venue": "barn",
+        "season": "summer",
+        "time_of_day": "golden_hour",
+        "ceremony": "civil",
+        "weather": "sunny"
+      }
+    },
+    {
+      "filename": "Sarah_and_Dave.mp4",
+      "duration_sec": 347.69,
+      "clips": 149,
+      "avg_clip_sec": 2.33,
+      "metadata": {
+        "venue": "barn",
+        "season": "summer",
+        "time_of_day": "afternoon",
+        "ceremony": "civil",
+        "weather": "sunny"
+      }
+    },
+    {
+      "filename": "Sarah_and_Mike.mp4",
+      "duration_sec": 291.796667,
+      "clips": 145,
+      "avg_clip_sec": 2.01,
+      "metadata": {
+        "venue": "outdoor",
+        "season": "summer",
+        "time_of_day": "golden_hour",
+        "ceremony": "civil",
+        "weather": "sunny"
+      }
+    }
+  ]
+}

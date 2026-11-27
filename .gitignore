@@ -25,3 +25,10 @@ tests/fixtures/*.mp4
 tests/fixtures/*.mov
 .claude/
 .playwright-mcp/
+
+# Proprietary LUTs and licensed fonts (keep local only)
+*.cube
+*.woff
+*.woff2
+*.otf
+*.ttf

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Social Cut Vendor Handle Overlay (9:16 Safe, Recoleta)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'Recoleta';
+      src: local('Recoleta'), local('Recoleta Regular'), local('Recoleta-Regular'),
+           url('../assets/fonts/Recoleta-Regular.woff2') format('woff2'),
+           url('../assets/fonts/Recoleta-Regular.otf') format('opentype');
+      font-weight: 400;
+      font-style: normal;
+      font-display: block;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: transparent;
+      -webkit-font-smoothing: antialiased;
+    }
+    /* Positioned above Instagram Reels caption & right-side icon safe zone
+       (1080x1920 stage: bottom >= 310px, right >= 160px). */
+    .tag {
+      position: fixed;
+      left: 56px;
+      bottom: 310px;
+      max-width: 780px;
+      padding: 16px 24px;
+      background: rgba(18, 15, 12, 0.52);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 6px;
+      backdrop-filter: blur(6px);
+      color: #FFFFFF;
+    }
+    #vendor-role {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.78);
+    }
+    #vendor-name {
+      font-family: 'Recoleta', 'Fraunces', Georgia, serif;
+      font-size: 44px;
+      font-weight: 400;
+      line-height: 1.08;
+      margin-top: 4px;
+      color: #FFFFFF;
+    }
+    #vendor-handle {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 25px;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      margin-top: 6px;
+      color: #F2DEC0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Used on ALL social media cuts (9:16 trailer + vendor reels) so vendor handles always show. -->
+  <div class="tag" id="tag">
+    <div id="vendor-role">FLORALS</div>
+    <div id="vendor-name">Three Notch Florals</div>
+    <div id="vendor-handle">@threenotchflorals</div>
+  </div>
+
+  <script type="module">
+    const DURATION = 4.0;
+    const clamp = (v, lo, hi) => Math.max(lo, Math.min(hi, v));
+    const easeOut = (x) => 1 - Math.pow(1 - clamp(x, 0, 1), 3);
+    const easeIn = (x) => Math.pow(clamp(x, 0, 1), 2);
+
+    const tag = document.getElementById('tag');
+    const ready = Promise.all([
+      document.fonts.load('400 44px "Recoleta"'),
+      document.fonts.load('400 44px "Fraunces"'),
+      document.fonts.load('500 25px "Inter"'),
+    ]).catch(() => {});
+
+    window.film = {
+      duration: DURATION,
+      ready,
+      frame(t) {
+        const enter = easeOut(t / 0.55);
+        const exit = 1 - easeIn((t - (DURATION - 0.55)) / 0.55);
+        const alpha = clamp(enter * exit, 0, 1);
+        const y = (1 - enter) * 14;
+        tag.style.opacity = String(alpha);
+        tag.style.transform = `translate3d(0, ${y.toFixed(2)}px, 0)`;
+      },
+    };
+
+    if (!window.filmHost) {
+      const t0 = performance.now();
+      const loop = () => {
+        const t = ((performance.now() - t0) / 1000) % DURATION;
+        window.film.frame(t);
+        requestAnimationFrame(loop);
+      };
+      ready.then(loop);
+    }
+  </script>
+</body>
+</html>
