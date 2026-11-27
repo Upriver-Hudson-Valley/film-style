@@ -1,0 +1,23 @@
+{
+  "$schema": "https://openfilm.dev/schema/openfilm.schema.json",
+  "version": "0.1.0",
+  "kind": "workflow",
+  "icon": "film",
+  "title": {
+    "en": "Joshua Brown Wedding Film Studio"
+  },
+  "summary": {
+    "en": "Turn raw wedding footage, audio, and Pic-Time stills into a full documentary wedding film, ceremony & speeches edits, 1-minute trailer, and tagged vendor reels — graded, verified, and published."
+  },
+  "details": {
+    "en": "Best for: Hudson Valley & Catskills documentary wedding productions (Canon C-Log3 video + Sony stills).\nWhat it does: Loads your measured film-style-analyzer profile, pulls edited day-of stills from Pic-Time MCP for ACEScct color matching, builds 5 OpenFilm projects (highlight film, ceremony, speeches, 1-min trailer, vendor reels with on-screen tags), validates pacing against your profile, and publishes to R2, Mux, your website, Pic-Time, Metricool MCP, and Meta Ads MCP."
+  },
+  "needs": {
+    "en": "Node.js 22+, FFmpeg, film-style-analyzer (local profile in ~/.film-style-analyzer/), plus optional MCP servers: Pic-Time, Metricool, Meta Ads."
+  },
+  "permissions": {
+    "project": "Reads raw wedding video/audio folders, writes OpenFilm project folders (film.html, pages, looks/*.ctf), and renders MP4 deliverables.",
+    "program": "Runs film-style CLI for clip scoring and timeline comparison, ffmpeg/ffprobe for audio sync checks, and helper scripts for R2/Mux publishing.",
+    "network": "Connects to Pic-Time MCP, Cloudflare R2, Mux Video API, Metricool MCP, and Meta Ads MCP when publishing or fetching stills."
+  }
+}

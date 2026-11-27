@@ -1,0 +1,3383 @@
+{
+  "getting_ready": {
+    "label": "getting_ready",
+    "active": true,
+    "n_clips_observed": 254,
+    "duration": {
+      "target_mean_sec": 2.266,
+      "target_median_sec": 2.002,
+      "acceptable_range_sec": [
+        0.834,
+        3.42
+      ],
+      "stdev_sec": 1.762
+    },
+    "preferred_subjects": [
+      {
+        "value": "bride",
+        "weight": 0.278
+      },
+      {
+        "value": "details_only",
+        "weight": 0.179
+      },
+      {
+        "value": "groom",
+        "weight": 0.156
+      },
+      {
+        "value": "wedding_party",
+        "weight": 0.114
+      },
+      {
+        "value": "parents",
+        "weight": 0.091
+      },
+      {
+        "value": "family",
+        "weight": 0.082
+      }
+    ],
+    "preferred_settings": [
+      {
+        "value": "getting_ready_room",
+        "weight": 0.583
+      },
+      {
+        "value": "exterior_landscape",
+        "weight": 0.173
+      },
+      {
+        "value": "interior_other",
+        "weight": 0.075
+      },
+      {
+        "value": "garden",
+        "weight": 0.059
+      }
+    ],
+    "preferred_lighting": [
+      {
+        "value": "warm_indoor",
+        "weight": 0.447
+      },
+      {
+        "value": "natural_daylight",
+        "weight": 0.391
+      },
+      {
+        "value": "overcast",
+        "weight": 0.126
+      }
+    ],
+    "preferred_camera": [
+      {
+        "value": "slight_handheld",
+        "weight": 0.65
+      },
+      {
+        "value": "locked",
+        "weight": 0.307
+      }
+    ],
+    "preferred_mood": [
+      {
+        "value": "tender",
+        "weight": 0.268
+      },
+      {
+        "value": "anticipatory",
+        "weight": 0.197
+      },
+      {
+        "value": "still",
+        "weight": 0.15
+      },
+      {
+        "value": "candid",
+        "weight": 0.134
+      },
+      {
+        "value": "intimate",
+        "weight": 0.098
+      },
+      {
+        "value": "joyful",
+        "weight": 0.083
+      },
+      {
+        "value": "ceremonial",
+        "weight": 0.063
+      }
+    ],
+    "common_actions": [
+      {
+        "action": "walking down stairs",
+        "count": 3
+      },
+      {
+        "action": "applying makeup",
+        "count": 3
+      },
+      {
+        "action": "chatting in suite",
+        "count": 3
+      },
+      {
+        "action": "lacing dress back",
+        "count": 2
+      },
+      {
+        "action": "looking out window",
+        "count": 2
+      },
+      {
+        "action": "smiling outdoors",
+        "count": 2
+      },
+      {
+        "action": "lacing dress in mirror",
+        "count": 2
+      },
+      {
+        "action": "read vow booklet",
+        "count": 2
+      },
+      {
+        "action": "first look reveal",
+        "count": 2
+      },
+      {
+        "action": "show venue sign",
+        "count": 2
+      },
+      {
+        "action": "buttoning lace dress",
+        "count": 2
+      },
+      {
+        "action": "tying bow tie",
+        "count": 2
+      },
+      {
+        "action": "rack focus on flowers",
+        "count": 2
+      },
+      {
+        "action": "tree branches sway",
+        "count": 1
+      },
+      {
+        "action": "buttoning suit jacket",
+        "count": 1
+      }
+    ],
+    "scoring_recipe": "score = 0.30*subject_match + 0.25*setting_match + 0.20*mood_match + 0.15*lighting_match + 0.10*camera_match. Each match = preferred-vocab weight if present else 0. Reject candidates whose duration is outside acceptable_range_sec unless no in-range candidate exists for the slot."
+  },
+  "details": {
+    "label": "details",
+    "active": true,
+    "n_clips_observed": 126,
+    "duration": {
+      "target_mean_sec": 2.13,
+      "target_median_sec": 1.793,
+      "acceptable_range_sec": [
+        0.792,
+        3.17
+      ],
+      "stdev_sec": 2.382
+    },
+    "preferred_subjects": [
+      {
+        "value": "details_only",
+        "weight": 0.379
+      },
+      {
+        "value": "guests",
+        "weight": 0.183
+      },
+      {
+        "value": "bride",
+        "weight": 0.144
+      },
+      {
+        "value": "couple",
+        "weight": 0.118
+      },
+      {
+        "value": "wedding_party",
+        "weight": 0.052
+      },
+      {
+        "value": "family",
+        "weight": 0.052
+      }
+    ],
+    "preferred_settings": [
+      {
+        "value": "reception_table",
+        "weight": 0.278
+      },
+      {
+        "value": "exterior_landscape",
+        "weight": 0.214
+      },
+      {
+        "value": "getting_ready_room",
+        "weight": 0.206
+      },
+      {
+        "value": "interior_other",
+        "weight": 0.071
+      },
+      {
+        "value": "ballroom",
+        "weight": 0.063
+      }
+    ],
+    "preferred_lighting": [
+      {
+        "value": "warm_indoor",
+        "weight": 0.421
+      },
+      {
+        "value": "natural_daylight",
+        "weight": 0.206
+      },
+      {
+        "value": "overcast",
+        "weight": 0.159
+      },
+      {
+        "value": "candle",
+        "weight": 0.103
+      },
+      {
+        "value": "golden_hour",
+        "weight": 0.056
+      }
+    ],
+    "preferred_camera": [
+      {
+        "value": "slight_handheld",
+        "weight": 0.508
+      },
+      {
+        "value": "locked",
+        "weight": 0.421
+      }
+    ],
+    "preferred_mood": [
+      {
+        "value": "still",
+        "weight": 0.349
+      },
+      {
+        "value": "candid",
+        "weight": 0.167
+      },
+      {
+        "value": "intimate",
+        "weight": 0.127
+      },
+      {
+        "value": "joyful",
+        "weight": 0.127
+      },
+      {
+        "value": "tender",
+        "weight": 0.111
+      },
+      {
+        "value": "anticipatory",
+        "weight": 0.056
+      }
+    ],
+    "common_actions": [
+      {
+        "action": "centerpiece close-up",
+        "count": 2
+      },
+      {
+        "action": "show wedding cake",
+        "count": 2
+      },
+      {
+        "action": "showing wedding stationery",
+        "count": 2
+      },
+      {
+        "action": "chatting seated",
+        "count": 1
+      },
+      {
+        "action": "giving toast at mic",
+        "count": 1
+      },
+      {
+        "action": "place setting still",
+        "count": 1
+      },
+      {
+        "action": "guestbook sign close-up",
+        "count": 1
+      },
+      {
+        "action": "monogram book still",
+        "count": 1
+      },
+      {
+        "action": "eating at long table",
+        "count": 1
+      },
+      {
+        "action": "speaking expressively",
+        "count": 1
+      },
+      {
+        "action": "walking arm in arm",
+        "count": 1
+      },
+      {
+        "action": "kissing in field",
+        "count": 1
+      },
+      {
+        "action": "linking pinkies in field",
+        "count": 1
+      },
+      {
+        "action": "holding hands close",
+        "count": 1
+      },
+      {
+        "action": "leaning in to kiss",
+        "count": 1
+      }
+    ],
+    "scoring_recipe": "score = 0.30*subject_match + 0.25*setting_match + 0.20*mood_match + 0.15*lighting_match + 0.10*camera_match. Each match = preferred-vocab weight if present else 0. Reject candidates whose duration is outside acceptable_range_sec unless no in-range candidate exists for the slot."
+  },
+  "first_look": {
+    "label": "first_look",
+    "active": true,
+    "n_clips_observed": 126,
+    "duration": {
+      "target_mean_sec": 1.985,
+      "target_median_sec": 1.752,
+      "acceptable_range_sec": [
+        0.751,
+        3.378
+      ],
+      "stdev_sec": 1.105
+    },
+    "preferred_subjects": [
+      {
+        "value": "bride",
+        "weight": 0.289
+      },
+      {
+        "value": "couple",
+        "weight": 0.189
+      },
+      {
+        "value": "groom",
+        "weight": 0.167
+      },
+      {
+        "value": "parents",
+        "weight": 0.117
+      },
+      {
+        "value": "wedding_party",
+        "weight": 0.089
+      },
+      {
+        "value": "family",
+        "weight": 0.078
+      }
+    ],
+    "preferred_settings": [
+      {
+        "value": "exterior_landscape",
+        "weight": 0.262
+      },
+      {
+        "value": "getting_ready_room",
+        "weight": 0.262
+      },
+      {
+        "value": "lawn",
+        "weight": 0.19
+      },
+      {
+        "value": "garden",
+        "weight": 0.127
+      },
+      {
+        "value": "interior_other",
+        "weight": 0.087
+      },
+      {
+        "value": "altar",
+        "weight": 0.056
+      }
+    ],
+    "preferred_lighting": [
+      {
+        "value": "overcast",
+        "weight": 0.357
+      },
+      {
+        "value": "natural_daylight",
+        "weight": 0.325
+      },
+      {
+        "value": "warm_indoor",
+        "weight": 0.262
+      },
+      {
+        "value": "golden_hour",
+        "weight": 0.056
+      }
+    ],
+    "preferred_camera": [
+      {
+        "value": "slight_handheld",
+        "weight": 0.754
+      },
+      {
+        "value": "locked",
+        "weight": 0.214
+      }
+    ],
+    "preferred_mood": [
+      {
+        "value": "tender",
+        "weight": 0.437
+      },
+      {
+        "value": "joyful",
+        "weight": 0.167
+      },
+      {
+        "value": "anticipatory",
+        "weight": 0.135
+      },
+      {
+        "value": "candid",
+        "weight": 0.135
+      },
+      {
+        "value": "still",
+        "weight": 0.056
+      }
+    ],
+    "common_actions": [
+      {
+        "action": "embracing tightly",
+        "count": 4
+      },
+      {
+        "action": "first look reaction",
+        "count": 3
+      },
+      {
+        "action": "reading vows",
+        "count": 3
+      },
+      {
+        "action": "approaching from behind",
+        "count": 2
+      },
+      {
+        "action": "reaching for each other",
+        "count": 2
+      },
+      {
+        "action": "posing for portrait",
+        "count": 2
+      },
+      {
+        "action": "reading vows at ceremony",
+        "count": 2
+      },
+      {
+        "action": "first look reveal",
+        "count": 2
+      },
+      {
+        "action": "first look kiss",
+        "count": 2
+      },
+      {
+        "action": "reacting wide-mouthed",
+        "count": 1
+      },
+      {
+        "action": "approaching for hug",
+        "count": 1
+      },
+      {
+        "action": "holding hands smiling",
+        "count": 1
+      },
+      {
+        "action": "waiting for first look",
+        "count": 1
+      },
+      {
+        "action": "tapping shoulder",
+        "count": 1
+      },
+      {
+        "action": "turning to see",
+        "count": 1
+      }
+    ],
+    "scoring_recipe": "score = 0.30*subject_match + 0.25*setting_match + 0.20*mood_match + 0.15*lighting_match + 0.10*camera_match. Each match = preferred-vocab weight if present else 0. Reject candidates whose duration is outside acceptable_range_sec unless no in-range candidate exists for the slot."
+  },
+  "portraits": {
+    "label": "portraits",
+    "active": true,
+    "n_clips_observed": 336,
+    "duration": {
+      "target_mean_sec": 2.745,
+      "target_median_sec": 2.085,
+      "acceptable_range_sec": [
+        0.834,
+        4.542
+      ],
+      "stdev_sec": 3.901
+    },
+    "preferred_subjects": [
+      {
+        "value": "couple",
+        "weight": 0.296
+      },
+      {
+        "value": "bride",
+        "weight": 0.157
+      },
+      {
+        "value": "wedding_party",
+        "weight": 0.137
+      },
+      {
+        "value": "groom",
+        "weight": 0.102
+      },
+      {
+        "value": "guests",
+        "weight": 0.082
+      },
+      {
+        "value": "family",
+        "weight": 0.068
+      },
+      {
+        "value": "parents",
+        "weight": 0.066
+      },
+      {
+        "value": "details_only",
+        "weight": 0.062
+      }
+    ],
+    "preferred_settings": [
+      {
+        "value": "exterior_landscape",
+        "weight": 0.443
+      },
+      {
+        "value": "lawn",
+        "weight": 0.188
+      },
+      {
+        "value": "interior_other",
+        "weight": 0.086
+      },
+      {
+        "value": "garden",
+        "weight": 0.086
+      },
+      {
+        "value": "getting_ready_room",
+        "weight": 0.065
+      }
+    ],
+    "preferred_lighting": [
+      {
+        "value": "natural_daylight",
+        "weight": 0.397
+      },
+      {
+        "value": "overcast",
+        "weight": 0.242
+      },
+      {
+        "value": "warm_indoor",
+        "weight": 0.158
+      },
+      {
+        "value": "golden_hour",
+        "weight": 0.119
+      }
+    ],
+    "preferred_camera": [
+      {
+        "value": "slight_handheld",
+        "weight": 0.551
+      },
+      {
+        "value": "locked",
+        "weight": 0.357
+      }
+    ],
+    "preferred_mood": [
+      {
+        "value": "tender",
+        "weight": 0.345
+      },
+      {
+        "value": "joyful",
+        "weight": 0.17
+      },
+      {
+        "value": "candid",
+        "weight": 0.113
+      },
+      {
+        "value": "still",
+        "weight": 0.104
+      },
+      {
+        "value": "intimate",
+        "weight": 0.086
+      },
+      {
+        "value": "celebratory",
+        "weight": 0.062
+      },
+      {
+        "value": "ceremonial",
+        "weight": 0.062
+      }
+    ],
+    "common_actions": [
+      {
+        "action": "looking at each other",
+        "count": 3
+      },
+      {
+        "action": "pose for portrait",
+        "count": 3
+      },
+      {
+        "action": "chat in group",
+        "count": 3
+      },
+      {
+        "action": "pose family portrait",
+        "count": 3
+      },
+      {
+        "action": "walking holding hands",
+        "count": 3
+      },
+      {
+        "action": "smiling at each other",
+        "count": 3
+      },
+      {
+        "action": "first look reveal",
+        "count": 2
+      },
+      {
+        "action": "laughing together",
+        "count": 2
+      },
+      {
+        "action": "walking together",
+        "count": 2
+      },
+      {
+        "action": "pinning boutonniere",
+        "count": 2
+      },
+      {
+        "action": "walking through garden",
+        "count": 2
+      },
+      {
+        "action": "reading vows",
+        "count": 2
+      },
+      {
+        "action": "talking by doorway",
+        "count": 2
+      },
+      {
+        "action": "chatting at cocktails",
+        "count": 2
+      },
+      {
+        "action": "posing in photobooth",
+        "count": 2
+      }
+    ],
+    "scoring_recipe": "score = 0.30*subject_match + 0.25*setting_match + 0.20*mood_match + 0.15*lighting_match + 0.10*camera_match. Each match = preferred-vocab weight if present else 0. Reject candidates whose duration is outside acceptable_range_sec unless no in-range candidate exists for the slot."
+  },
+  "ceremony": {
+    "label": "ceremony",
+    "active": true,
+    "n_clips_observed": 207,
+    "duration": {
+      "target_mean_sec": 1.689,
+      "target_median_sec": 1.501,
+      "acceptable_range_sec": [
+        0.709,
+        2.878
+      ],
+      "stdev_sec": 1.049
+    },
+    "preferred_subjects": [
+      {
+        "value": "guests",
+        "weight": 0.377
+      },
+      {
+        "value": "family",
+        "weight": 0.138
+      },
+      {
+        "value": "parents",
+        "weight": 0.1
+      },
+      {
+        "value": "officiant",
+        "weight": 0.08
+      },
+      {
+        "value": "bride",
+        "weight": 0.076
+      },
+      {
+        "value": "couple",
+        "weight": 0.066
+      },
+      {
+        "value": "groom",
+        "weight": 0.066
+      },
+      {
+        "value": "wedding_party",
+        "weight": 0.055
+      }
+    ],
+    "preferred_settings": [
+      {
+        "value": "ceremony_seating",
+        "weight": 0.454
+      },
+      {
+        "value": "altar",
+        "weight": 0.164
+      },
+      {
+        "value": "exterior_landscape",
+        "weight": 0.116
+      },
+      {
+        "value": "interior_other",
+        "weight": 0.082
+      },
+      {
+        "value": "aisle",
+        "weight": 0.072
+      },
+      {
+        "value": "lawn",
+        "weight": 0.063
+      }
+    ],
+    "preferred_lighting": [
+      {
+        "value": "natural_daylight",
+        "weight": 0.391
+      },
+      {
+        "value": "overcast",
+        "weight": 0.357
+      },
+      {
+        "value": "golden_hour",
+        "weight": 0.13
+      },
+      {
+        "value": "warm_indoor",
+        "weight": 0.121
+      }
+    ],
+    "preferred_camera": [
+      {
+        "value": "slight_handheld",
+        "weight": 0.556
+      },
+      {
+        "value": "locked",
+        "weight": 0.411
+      }
+    ],
+    "preferred_mood": [
+      {
+        "value": "ceremonial",
+        "weight": 0.295
+      },
+      {
+        "value": "candid",
+        "weight": 0.217
+      },
+      {
+        "value": "anticipatory",
+        "weight": 0.174
+      },
+      {
+        "value": "tender",
+        "weight": 0.116
+      },
+      {
+        "value": "joyful",
+        "weight": 0.092
+      },
+      {
+        "value": "still",
+        "weight": 0.077
+      }
+    ],
+    "common_actions": [
+      {
+        "action": "watching ceremony",
+        "count": 14
+      },
+      {
+        "action": "walking down aisle",
+        "count": 8
+      },
+      {
+        "action": "watching ceremony seated",
+        "count": 5
+      },
+      {
+        "action": "watch ceremony",
+        "count": 5
+      },
+      {
+        "action": "signing ketubah",
+        "count": 3
+      },
+      {
+        "action": "seated waiting",
+        "count": 2
+      },
+      {
+        "action": "seated front row",
+        "count": 2
+      },
+      {
+        "action": "applying makeup",
+        "count": 2
+      },
+      {
+        "action": "walking to seats",
+        "count": 2
+      },
+      {
+        "action": "seated for ceremony",
+        "count": 2
+      },
+      {
+        "action": "watch ceremony seated",
+        "count": 2
+      },
+      {
+        "action": "bride signs ketubah",
+        "count": 2
+      },
+      {
+        "action": "share laugh with friend",
+        "count": 2
+      },
+      {
+        "action": "groom reads vows from book",
+        "count": 2
+      },
+      {
+        "action": "guest watches with smile",
+        "count": 2
+      }
+    ],
+    "scoring_recipe": "score = 0.30*subject_match + 0.25*setting_match + 0.20*mood_match + 0.15*lighting_match + 0.10*camera_match. Each match = preferred-vocab weight if present else 0. Reject candidates whose duration is outside acceptable_range_sec unless no in-range candidate exists for the slot."
+  },
+  "ceremony_processional": {
+    "label": "ceremony_processional",
+    "active": true,
+    "n_clips_observed": 133,
+    "duration": {
+      "target_mean_sec": 1.786,
+      "target_median_sec": 1.543,
+      "acceptable_range_sec": [
+        0.751,
+        2.669
+      ],
+      "stdev_sec": 1.404
+    },
+    "preferred_subjects": [
+      {
+        "value": "parents",
+        "weight": 0.233
+      },
+      {
+        "value": "bride",
+        "weight": 0.214
+      },
+      {
+        "value": "guests",
+        "weight": 0.163
+      },
+      {
+        "value": "wedding_party",
+        "weight": 0.14
+      },
+      {
+        "value": "groom",
+        "weight": 0.079
+      },
+      {
+        "value": "family",
+        "weight": 0.056
+      }
+    ],
+    "preferred_settings": [
+      {
+        "value": "aisle",
+        "weight": 0.421
+      },
+      {
+        "value": "ceremony_seating",
+        "weight": 0.226
+      },
+      {
+        "value": "altar",
+        "weight": 0.195
+      },
+      {
+        "value": "exterior_landscape",
+        "weight": 0.068
+      },
+      {
+        "value": "garden",
+        "weight": 0.06
+      }
+    ],
+    "preferred_lighting": [
+      {
+        "value": "natural_daylight",
+        "weight": 0.481
+      },
+      {
+        "value": "overcast",
+        "weight": 0.248
+      },
+      {
+        "value": "warm_indoor",
+        "weight": 0.12
+      },
+      {
+        "value": "golden_hour",
+        "weight": 0.105
+      }
+    ],
+    "preferred_camera": [
+      {
+        "value": "slight_handheld",
+        "weight": 0.729
+      },
+      {
+        "value": "locked",
+        "weight": 0.256
+      }
+    ],
+    "preferred_mood": [
+      {
+        "value": "ceremonial",
+        "weight": 0.519
+      },
+      {
+        "value": "tender",
+        "weight": 0.143
+      },
+      {
+        "value": "joyful",
+        "weight": 0.098
+      },
+      {
+        "value": "candid",
+        "weight": 0.098
+      },
+      {
+        "value": "anticipatory",
+        "weight": 0.083
+      }
+    ],
+    "common_actions": [
+      {
+        "action": "walking down aisle",
+        "count": 31
+      },
+      {
+        "action": "walk down aisle",
+        "count": 4
+      },
+      {
+        "action": "processing down aisle",
+        "count": 2
+      },
+      {
+        "action": "sit watching ceremony",
+        "count": 2
+      },
+      {
+        "action": "watching ceremony",
+        "count": 2
+      },
+      {
+        "action": "process toward altar",
+        "count": 2
+      },
+      {
+        "action": "guests watching ceremony",
+        "count": 2
+      },
+      {
+        "action": "bridesmaid walking aisle",
+        "count": 2
+      },
+      {
+        "action": "officiant reading at altar",
+        "count": 1
+      },
+      {
+        "action": "groomsmen lined up watching",
+        "count": 1
+      },
+      {
+        "action": "flower girls seated",
+        "count": 1
+      },
+      {
+        "action": "flower girls together",
+        "count": 1
+      },
+      {
+        "action": "long hug with mother",
+        "count": 1
+      },
+      {
+        "action": "hug aunt",
+        "count": 1
+      },
+      {
+        "action": "share embrace",
+        "count": 1
+      }
+    ],
+    "scoring_recipe": "score = 0.30*subject_match + 0.25*setting_match + 0.20*mood_match + 0.15*lighting_match + 0.10*camera_match. Each match = preferred-vocab weight if present else 0. Reject candidates whose duration is outside acceptable_range_sec unless no in-range candidate exists for the slot."
+  },
+  "ceremony_vows": {
+    "label": "ceremony_vows",
+    "active": true,
+    "n_clips_observed": 140,
+    "duration": {
+      "target_mean_sec": 2.183,
+      "target_median_sec": 1.856,
+      "acceptable_range_sec": [
+        0.876,
+        4.046
+      ],
+      "stdev_sec": 1.313
+    },
+    "preferred_subjects": [
+      {
+        "value": "couple",
+        "weight": 0.214
+      },
+      {
+        "value": "officiant",
+        "weight": 0.153
+      },
+      {
+        "value": "bride",
+        "weight": 0.148
+      },
+      {
+        "value": "groom",
+        "weight": 0.114
+      },
+      {
+        "value": "guests",
+        "weight": 0.096
+      },
+      {
+        "value": "wedding_party",
+        "weight": 0.083
+      },
+      {
+        "value": "parents",
+        "weight": 0.079
+      },
+      {
+        "value": "family",
+        "weight": 0.061
+      }
+    ],
+    "preferred_settings": [
+      {
+        "value": "altar",
+        "weight": 0.6
+      },
+      {
+        "value": "ceremony_seating",
+        "weight": 0.171
+      },
+      {
+        "value": "aisle",
+        "weight": 0.143
+      }
+    ],
+    "preferred_lighting": [
+      {
+        "value": "overcast",
+        "weight": 0.371
+      },
+      {
+        "value": "golden_hour",
+        "weight": 0.257
+      },
+      {
+        "value": "natural_daylight",
+        "weight": 0.179
+      },
+      {
+        "value": "warm_indoor",
+        "weight": 0.15
+      }
+    ],
+    "preferred_camera": [
+      {
+        "value": "slight_handheld",
+        "weight": 0.664
+      },
+      {
+        "value": "locked",
+        "weight": 0.329
+      }
+    ],
+    "preferred_mood": [
+      {
+        "value": "ceremonial",
+        "weight": 0.429
+      },
+      {
+        "value": "tender",
+        "weight": 0.329
+      },
+      {
+        "value": "joyful",
+        "weight": 0.121
+      }
+    ],
+    "common_actions": [
+      {
+        "action": "exchanging rings",
+        "count": 5
+      },
+      {
+        "action": "exchanging vows",
+        "count": 4
+      },
+      {
+        "action": "walking down aisle",
+        "count": 3
+      },
+      {
+        "action": "looking at groom",
+        "count": 3
+      },
+      {
+        "action": "reading vows aloud",
+        "count": 3
+      },
+      {
+        "action": "watching ceremony",
+        "count": 2
+      },
+      {
+        "action": "laughing at ceremony",
+        "count": 2
+      },
+      {
+        "action": "listening at altar",
+        "count": 2
+      },
+      {
+        "action": "exchanging ceremony vows",
+        "count": 2
+      },
+      {
+        "action": "watching bride approach",
+        "count": 2
+      },
+      {
+        "action": "laughing during ceremony",
+        "count": 2
+      },
+      {
+        "action": "smiling at groom",
+        "count": 2
+      },
+      {
+        "action": "first kiss",
+        "count": 2
+      },
+      {
+        "action": "holding hands ceremony",
+        "count": 1
+      },
+      {
+        "action": "putting on ring",
+        "count": 1
+      }
+    ],
+    "scoring_recipe": "score = 0.30*subject_match + 0.25*setting_match + 0.20*mood_match + 0.15*lighting_match + 0.10*camera_match. Each match = preferred-vocab weight if present else 0. Reject candidates whose duration is outside acceptable_range_sec unless no in-range candidate exists for the slot."
+  },
+  "ceremony_recessional": {
+    "label": "ceremony_recessional",
+    "active": true,
+    "n_clips_observed": 37,
+    "duration": {
+      "target_mean_sec": 2.736,
+      "target_median_sec": 1.877,
+      "acceptable_range_sec": [
+        0.583,
+        5.13
+      ],
+      "stdev_sec": 2.689
+    },
+    "preferred_subjects": [
+      {
+        "value": "couple",
+        "weight": 0.423
+      },
+      {
+        "value": "guests",
+        "weight": 0.231
+      },
+      {
+        "value": "officiant",
+        "weight": 0.115
+      },
+      {
+        "value": "wedding_party",
+        "weight": 0.058
+      },
+      {
+        "value": "family",
+        "weight": 0.058
+      },
+      {
+        "value": "groom",
+        "weight": 0.058
+      }
+    ],
+    "preferred_settings": [
+      {
+        "value": "altar",
+        "weight": 0.297
+      },
+      {
+        "value": "aisle",
+        "weight": 0.243
+      },
+      {
+        "value": "exterior_landscape",
+        "weight": 0.135
+      },
+      {
+        "value": "interior_other",
+        "weight": 0.108
+      },
+      {
+        "value": "tent",
+        "weight": 0.081
+      },
+      {
+        "value": "reception_table",
+        "weight": 0.081
+      }
+    ],
+    "preferred_lighting": [
+      {
+        "value": "natural_daylight",
+        "weight": 0.459
+      },
+      {
+        "value": "overcast",
+        "weight": 0.351
+      },
+      {
+        "value": "golden_hour",
+        "weight": 0.081
+      },
+      {
+        "value": "warm_indoor",
+        "weight": 0.054
+      },
+      {
+        "value": "uplighting_cool",
+        "weight": 0.054
+      }
+    ],
+    "preferred_camera": [
+      {
+        "value": "slight_handheld",
+        "weight": 0.514
+      },
+      {
+        "value": "locked",
+        "weight": 0.378
+      },
+      {
+        "value": "gimbal_walk",
+        "weight": 0.081
+      }
+    ],
+    "preferred_mood": [
+      {
+        "value": "celebratory",
+        "weight": 0.378
+      },
+      {
+        "value": "tender",
+        "weight": 0.216
+      },
+      {
+        "value": "joyful",
+        "weight": 0.189
+      },
+      {
+        "value": "candid",
+        "weight": 0.108
+      },
+      {
+        "value": "ceremonial",
+        "weight": 0.081
+      }
+    ],
+    "common_actions": [
+      {
+        "action": "share first kiss",
+        "count": 2
+      },
+      {
+        "action": "recess down aisle",
+        "count": 2
+      },
+      {
+        "action": "first kiss",
+        "count": 1
+      },
+      {
+        "action": "recessional walking",
+        "count": 1
+      },
+      {
+        "action": "raising bouquet celebrating",
+        "count": 1
+      },
+      {
+        "action": "walking outdoor cocktail",
+        "count": 1
+      },
+      {
+        "action": "laughing at phone",
+        "count": 1
+      },
+      {
+        "action": "laughing with bride",
+        "count": 1
+      },
+      {
+        "action": "wiping tear emotional",
+        "count": 1
+      },
+      {
+        "action": "watching at table",
+        "count": 1
+      },
+      {
+        "action": "entering reception holding hands",
+        "count": 1
+      },
+      {
+        "action": "giving toast speech",
+        "count": 1
+      },
+      {
+        "action": "listening at table",
+        "count": 1
+      },
+      {
+        "action": "laughing during vows",
+        "count": 1
+      },
+      {
+        "action": "bridesmaid watching ceremony",
+        "count": 1
+      }
+    ],
+    "scoring_recipe": "score = 0.30*subject_match + 0.25*setting_match + 0.20*mood_match + 0.15*lighting_match + 0.10*camera_match. Each match = preferred-vocab weight if present else 0. Reject candidates whose duration is outside acceptable_range_sec unless no in-range candidate exists for the slot."
+  },
+  "cocktail_hour": {
+    "label": "cocktail_hour",
+    "active": true,
+    "n_clips_observed": 232,
+    "duration": {
+      "target_mean_sec": 2.0,
+      "target_median_sec": 1.585,
+      "acceptable_range_sec": [
+        0.876,
+        3.17
+      ],
+      "stdev_sec": 1.732
+    },
+    "preferred_subjects": [
+      {
+        "value": "guests",
+        "weight": 0.463
+      },
+      {
+        "value": "bride",
+        "weight": 0.1
+      },
+      {
+        "value": "couple",
+        "weight": 0.09
+      },
+      {
+        "value": "family",
+        "weight": 0.087
+      },
+      {
+        "value": "wedding_party",
+        "weight": 0.077
+      },
+      {
+        "value": "groom",
+        "weight": 0.073
+      }
+    ],
+    "preferred_settings": [
+      {
+        "value": "exterior_landscape",
+        "weight": 0.259
+      },
+      {
+        "value": "tent",
+        "weight": 0.241
+      },
+      {
+        "value": "interior_other",
+        "weight": 0.151
+      },
+      {
+        "value": "garden",
+        "weight": 0.065
+      },
+      {
+        "value": "altar",
+        "weight": 0.056
+      },
+      {
+        "value": "reception_table",
+        "weight": 0.052
+      },
+      {
+        "value": "lawn",
+        "weight": 0.052
+      }
+    ],
+    "preferred_lighting": [
+      {
+        "value": "warm_indoor",
+        "weight": 0.328
+      },
+      {
+        "value": "natural_daylight",
+        "weight": 0.315
+      },
+      {
+        "value": "golden_hour",
+        "weight": 0.207
+      },
+      {
+        "value": "overcast",
+        "weight": 0.091
+      }
+    ],
+    "preferred_camera": [
+      {
+        "value": "slight_handheld",
+        "weight": 0.634
+      },
+      {
+        "value": "locked",
+        "weight": 0.345
+      }
+    ],
+    "preferred_mood": [
+      {
+        "value": "candid",
+        "weight": 0.448
+      },
+      {
+        "value": "joyful",
+        "weight": 0.181
+      },
+      {
+        "value": "celebratory",
+        "weight": 0.116
+      },
+      {
+        "value": "tender",
+        "weight": 0.073
+      },
+      {
+        "value": "ceremonial",
+        "weight": 0.065
+      },
+      {
+        "value": "still",
+        "weight": 0.065
+      }
+    ],
+    "common_actions": [
+      {
+        "action": "talking at cocktail hour",
+        "count": 8
+      },
+      {
+        "action": "chat with relatives",
+        "count": 4
+      },
+      {
+        "action": "exchanging vows",
+        "count": 4
+      },
+      {
+        "action": "walking to ceremony",
+        "count": 3
+      },
+      {
+        "action": "chat with cocktails",
+        "count": 3
+      },
+      {
+        "action": "chat in group",
+        "count": 3
+      },
+      {
+        "action": "chat with friends",
+        "count": 3
+      },
+      {
+        "action": "chatting cocktail hour",
+        "count": 2
+      },
+      {
+        "action": "chatting holding drinks",
+        "count": 2
+      },
+      {
+        "action": "chatting holding drink",
+        "count": 2
+      },
+      {
+        "action": "give toast at mic",
+        "count": 2
+      },
+      {
+        "action": "sit and converse",
+        "count": 2
+      },
+      {
+        "action": "dance and chat",
+        "count": 2
+      },
+      {
+        "action": "hug father",
+        "count": 2
+      },
+      {
+        "action": "guests chatting at table",
+        "count": 2
+      }
+    ],
+    "scoring_recipe": "score = 0.30*subject_match + 0.25*setting_match + 0.20*mood_match + 0.15*lighting_match + 0.10*camera_match. Each match = preferred-vocab weight if present else 0. Reject candidates whose duration is outside acceptable_range_sec unless no in-range candidate exists for the slot."
+  },
+  "reception_entrance": {
+    "label": "reception_entrance",
+    "active": true,
+    "n_clips_observed": 55,
+    "duration": {
+      "target_mean_sec": 3.293,
+      "target_median_sec": 1.919,
+      "acceptable_range_sec": [
+        0.667,
+        7.125
+      ],
+      "stdev_sec": 5.032
+    },
+    "preferred_subjects": [
+      {
+        "value": "guests",
+        "weight": 0.316
+      },
+      {
+        "value": "groom",
+        "weight": 0.177
+      },
+      {
+        "value": "details_only",
+        "weight": 0.152
+      },
+      {
+        "value": "bride",
+        "weight": 0.139
+      },
+      {
+        "value": "family",
+        "weight": 0.089
+      },
+      {
+        "value": "parents",
+        "weight": 0.063
+      }
+    ],
+    "preferred_settings": [
+      {
+        "value": "reception_table",
+        "weight": 0.309
+      },
+      {
+        "value": "tent",
+        "weight": 0.291
+      },
+      {
+        "value": "ballroom",
+        "weight": 0.2
+      },
+      {
+        "value": "dance_floor",
+        "weight": 0.091
+      }
+    ],
+    "preferred_lighting": [
+      {
+        "value": "warm_indoor",
+        "weight": 0.709
+      },
+      {
+        "value": "natural_daylight",
+        "weight": 0.091
+      },
+      {
+        "value": "candle",
+        "weight": 0.073
+      },
+      {
+        "value": "uplighting_warm",
+        "weight": 0.073
+      },
+      {
+        "value": "overcast",
+        "weight": 0.055
+      }
+    ],
+    "preferred_camera": [
+      {
+        "value": "slight_handheld",
+        "weight": 0.527
+      },
+      {
+        "value": "locked",
+        "weight": 0.455
+      }
+    ],
+    "preferred_mood": [
+      {
+        "value": "candid",
+        "weight": 0.182
+      },
+      {
+        "value": "still",
+        "weight": 0.182
+      },
+      {
+        "value": "joyful",
+        "weight": 0.164
+      },
+      {
+        "value": "celebratory",
+        "weight": 0.164
+      },
+      {
+        "value": "tender",
+        "weight": 0.145
+      },
+      {
+        "value": "anticipatory",
+        "weight": 0.073
+      },
+      {
+        "value": "kinetic",
+        "weight": 0.055
+      }
+    ],
+    "common_actions": [
+      {
+        "action": "entering reception tent",
+        "count": 3
+      },
+      {
+        "action": "singing into microphone",
+        "count": 2
+      },
+      {
+        "action": "mother son dance",
+        "count": 2
+      },
+      {
+        "action": "father daughter dance",
+        "count": 2
+      },
+      {
+        "action": "showing centerpiece",
+        "count": 2
+      },
+      {
+        "action": "laughing during toasts",
+        "count": 1
+      },
+      {
+        "action": "chatting on bench",
+        "count": 1
+      },
+      {
+        "action": "hugging at cocktail hour",
+        "count": 1
+      },
+      {
+        "action": "wide of barn at dusk",
+        "count": 1
+      },
+      {
+        "action": "wide of barn glowing",
+        "count": 1
+      },
+      {
+        "action": "framing reception table",
+        "count": 1
+      },
+      {
+        "action": "framing menu place setting",
+        "count": 1
+      },
+      {
+        "action": "entering reception",
+        "count": 1
+      },
+      {
+        "action": "groom holding flower girl",
+        "count": 1
+      },
+      {
+        "action": "dancing with flower girl",
+        "count": 1
+      }
+    ],
+    "scoring_recipe": "score = 0.30*subject_match + 0.25*setting_match + 0.20*mood_match + 0.15*lighting_match + 0.10*camera_match. Each match = preferred-vocab weight if present else 0. Reject candidates whose duration is outside acceptable_range_sec unless no in-range candidate exists for the slot."
+  },
+  "first_dance": {
+    "label": "first_dance",
+    "active": true,
+    "n_clips_observed": 97,
+    "duration": {
+      "target_mean_sec": 2.887,
+      "target_median_sec": 1.835,
+      "acceptable_range_sec": [
+        0.667,
+        4.963
+      ],
+      "stdev_sec": 3.469
+    },
+    "preferred_subjects": [
+      {
+        "value": "couple",
+        "weight": 0.446
+      },
+      {
+        "value": "guests",
+        "weight": 0.2
+      },
+      {
+        "value": "parents",
+        "weight": 0.077
+      },
+      {
+        "value": "wedding_party",
+        "weight": 0.069
+      },
+      {
+        "value": "bride",
+        "weight": 0.069
+      },
+      {
+        "value": "family",
+        "weight": 0.054
+      },
+      {
+        "value": "groom",
+        "weight": 0.054
+      }
+    ],
+    "preferred_settings": [
+      {
+        "value": "dance_floor",
+        "weight": 0.608
+      },
+      {
+        "value": "tent",
+        "weight": 0.134
+      },
+      {
+        "value": "exterior_landscape",
+        "weight": 0.082
+      },
+      {
+        "value": "ballroom",
+        "weight": 0.082
+      }
+    ],
+    "preferred_lighting": [
+      {
+        "value": "warm_indoor",
+        "weight": 0.577
+      },
+      {
+        "value": "uplighting_warm",
+        "weight": 0.216
+      },
+      {
+        "value": "golden_hour",
+        "weight": 0.082
+      },
+      {
+        "value": "natural_daylight",
+        "weight": 0.052
+      }
+    ],
+    "preferred_camera": [
+      {
+        "value": "slight_handheld",
+        "weight": 0.742
+      },
+      {
+        "value": "locked",
+        "weight": 0.206
+      }
+    ],
+    "preferred_mood": [
+      {
+        "value": "tender",
+        "weight": 0.423
+      },
+      {
+        "value": "joyful",
+        "weight": 0.175
+      },
+      {
+        "value": "celebratory",
+        "weight": 0.175
+      },
+      {
+        "value": "candid",
+        "weight": 0.052
+      },
+      {
+        "value": "intimate",
+        "weight": 0.052
+      }
+    ],
+    "common_actions": [
+      {
+        "action": "slow dancing",
+        "count": 6
+      },
+      {
+        "action": "first dance spin",
+        "count": 4
+      },
+      {
+        "action": "first dance",
+        "count": 4
+      },
+      {
+        "action": "grand entrance",
+        "count": 3
+      },
+      {
+        "action": "first dance close",
+        "count": 2
+      },
+      {
+        "action": "cutting cake",
+        "count": 2
+      },
+      {
+        "action": "couple dancing on floor",
+        "count": 2
+      },
+      {
+        "action": "bride dances with father",
+        "count": 2
+      },
+      {
+        "action": "first dance close up",
+        "count": 2
+      },
+      {
+        "action": "post cake exchange",
+        "count": 1
+      },
+      {
+        "action": "photographing first dance",
+        "count": 1
+      },
+      {
+        "action": "first dance together",
+        "count": 1
+      },
+      {
+        "action": "first dance hold",
+        "count": 1
+      },
+      {
+        "action": "first dance lift",
+        "count": 1
+      },
+      {
+        "action": "watching speeches",
+        "count": 1
+      }
+    ],
+    "scoring_recipe": "score = 0.30*subject_match + 0.25*setting_match + 0.20*mood_match + 0.15*lighting_match + 0.10*camera_match. Each match = preferred-vocab weight if present else 0. Reject candidates whose duration is outside acceptable_range_sec unless no in-range candidate exists for the slot."
+  },
+  "speeches": {
+    "label": "speeches",
+    "active": true,
+    "n_clips_observed": 145,
+    "duration": {
+      "target_mean_sec": 2.599,
+      "target_median_sec": 1.877,
+      "acceptable_range_sec": [
+        0.667,
+        4.63
+      ],
+      "stdev_sec": 3.111
+    },
+    "preferred_subjects": [
+      {
+        "value": "guests",
+        "weight": 0.274
+      },
+      {
+        "value": "wedding_party",
+        "weight": 0.147
+      },
+      {
+        "value": "bride",
+        "weight": 0.121
+      },
+      {
+        "value": "family",
+        "weight": 0.116
+      },
+      {
+        "value": "couple",
+        "weight": 0.105
+      },
+      {
+        "value": "parents",
+        "weight": 0.079
+      },
+      {
+        "value": "groom",
+        "weight": 0.068
+      },
+      {
+        "value": "details_only",
+        "weight": 0.053
+      }
+    ],
+    "preferred_settings": [
+      {
+        "value": "ballroom",
+        "weight": 0.338
+      },
+      {
+        "value": "reception_table",
+        "weight": 0.331
+      },
+      {
+        "value": "dance_floor",
+        "weight": 0.166
+      },
+      {
+        "value": "tent",
+        "weight": 0.069
+      },
+      {
+        "value": "interior_other",
+        "weight": 0.062
+      }
+    ],
+    "preferred_lighting": [
+      {
+        "value": "warm_indoor",
+        "weight": 0.6
+      },
+      {
+        "value": "uplighting_warm",
+        "weight": 0.172
+      },
+      {
+        "value": "natural_daylight",
+        "weight": 0.103
+      },
+      {
+        "value": "candle",
+        "weight": 0.062
+      }
+    ],
+    "preferred_camera": [
+      {
+        "value": "slight_handheld",
+        "weight": 0.676
+      },
+      {
+        "value": "locked",
+        "weight": 0.269
+      }
+    ],
+    "preferred_mood": [
+      {
+        "value": "tender",
+        "weight": 0.214
+      },
+      {
+        "value": "candid",
+        "weight": 0.159
+      },
+      {
+        "value": "joyful",
+        "weight": 0.159
+      },
+      {
+        "value": "intimate",
+        "weight": 0.152
+      },
+      {
+        "value": "ceremonial",
+        "weight": 0.145
+      },
+      {
+        "value": "celebratory",
+        "weight": 0.097
+      }
+    ],
+    "common_actions": [
+      {
+        "action": "maid of honor speech",
+        "count": 12
+      },
+      {
+        "action": "giving toast",
+        "count": 4
+      },
+      {
+        "action": "giving toast at mic",
+        "count": 3
+      },
+      {
+        "action": "deliver speech",
+        "count": 3
+      },
+      {
+        "action": "talking at cocktail hour",
+        "count": 3
+      },
+      {
+        "action": "father reading toast speech",
+        "count": 3
+      },
+      {
+        "action": "applauding speech",
+        "count": 3
+      },
+      {
+        "action": "dance with mother",
+        "count": 3
+      },
+      {
+        "action": "best man giving toast",
+        "count": 2
+      },
+      {
+        "action": "listening to speeches",
+        "count": 2
+      },
+      {
+        "action": "couple poses at table",
+        "count": 2
+      },
+      {
+        "action": "talking at table",
+        "count": 2
+      },
+      {
+        "action": "listening to speech",
+        "count": 2
+      },
+      {
+        "action": "embracing at reception",
+        "count": 2
+      },
+      {
+        "action": "looking down quiet",
+        "count": 1
+      }
+    ],
+    "scoring_recipe": "score = 0.30*subject_match + 0.25*setting_match + 0.20*mood_match + 0.15*lighting_match + 0.10*camera_match. Each match = preferred-vocab weight if present else 0. Reject candidates whose duration is outside acceptable_range_sec unless no in-range candidate exists for the slot."
+  },
+  "toasts": {
+    "label": "toasts",
+    "active": true,
+    "n_clips_observed": 48,
+    "duration": {
+      "target_mean_sec": 2.785,
+      "target_median_sec": 1.522,
+      "acceptable_range_sec": [
+        0.583,
+        5.422
+      ],
+      "stdev_sec": 4.12
+    },
+    "preferred_subjects": [
+      {
+        "value": "guests",
+        "weight": 0.377
+      },
+      {
+        "value": "couple",
+        "weight": 0.164
+      },
+      {
+        "value": "groom",
+        "weight": 0.098
+      },
+      {
+        "value": "family",
+        "weight": 0.098
+      },
+      {
+        "value": "parents",
+        "weight": 0.082
+      },
+      {
+        "value": "bride",
+        "weight": 0.066
+      },
+      {
+        "value": "wedding_party",
+        "weight": 0.066
+      }
+    ],
+    "preferred_settings": [
+      {
+        "value": "reception_table",
+        "weight": 0.417
+      },
+      {
+        "value": "ballroom",
+        "weight": 0.292
+      },
+      {
+        "value": "dance_floor",
+        "weight": 0.188
+      },
+      {
+        "value": "tent",
+        "weight": 0.104
+      }
+    ],
+    "preferred_lighting": [
+      {
+        "value": "warm_indoor",
+        "weight": 0.458
+      },
+      {
+        "value": "uplighting_warm",
+        "weight": 0.188
+      },
+      {
+        "value": "candle",
+        "weight": 0.146
+      },
+      {
+        "value": "natural_daylight",
+        "weight": 0.083
+      },
+      {
+        "value": "dim_indoor",
+        "weight": 0.083
+      }
+    ],
+    "preferred_camera": [
+      {
+        "value": "slight_handheld",
+        "weight": 0.479
+      },
+      {
+        "value": "locked",
+        "weight": 0.438
+      },
+      {
+        "value": "handheld",
+        "weight": 0.062
+      }
+    ],
+    "preferred_mood": [
+      {
+        "value": "candid",
+        "weight": 0.25
+      },
+      {
+        "value": "celebratory",
+        "weight": 0.167
+      },
+      {
+        "value": "intimate",
+        "weight": 0.167
+      },
+      {
+        "value": "joyful",
+        "weight": 0.146
+      },
+      {
+        "value": "tender",
+        "weight": 0.125
+      },
+      {
+        "value": "still",
+        "weight": 0.062
+      }
+    ],
+    "common_actions": [
+      {
+        "action": "groom delivering thank-you toast",
+        "count": 3
+      },
+      {
+        "action": "giving toast at mic",
+        "count": 2
+      },
+      {
+        "action": "raising glass toast",
+        "count": 2
+      },
+      {
+        "action": "show candle centerpieces",
+        "count": 2
+      },
+      {
+        "action": "groomsmen hug groom",
+        "count": 2
+      },
+      {
+        "action": "lifting groom hug",
+        "count": 2
+      },
+      {
+        "action": "chatting with drinks",
+        "count": 2
+      },
+      {
+        "action": "seated at reception",
+        "count": 2
+      },
+      {
+        "action": "listening at table",
+        "count": 2
+      },
+      {
+        "action": "laughing at speech",
+        "count": 2
+      },
+      {
+        "action": "chatting at reception",
+        "count": 2
+      },
+      {
+        "action": "table greetings hugging",
+        "count": 1
+      },
+      {
+        "action": "speaking at table",
+        "count": 1
+      },
+      {
+        "action": "watching speeches",
+        "count": 1
+      },
+      {
+        "action": "laughing with father-in-law",
+        "count": 1
+      }
+    ],
+    "scoring_recipe": "score = 0.30*subject_match + 0.25*setting_match + 0.20*mood_match + 0.15*lighting_match + 0.10*camera_match. Each match = preferred-vocab weight if present else 0. Reject candidates whose duration is outside acceptable_range_sec unless no in-range candidate exists for the slot."
+  },
+  "cake_cutting": {
+    "label": "cake_cutting",
+    "active": true,
+    "n_clips_observed": 40,
+    "duration": {
+      "target_mean_sec": 3.605,
+      "target_median_sec": 1.48,
+      "acceptable_range_sec": [
+        0.542,
+        8.342
+      ],
+      "stdev_sec": 7.136
+    },
+    "preferred_subjects": [
+      {
+        "value": "couple",
+        "weight": 0.659
+      },
+      {
+        "value": "guests",
+        "weight": 0.136
+      }
+    ],
+    "preferred_settings": [
+      {
+        "value": "ballroom",
+        "weight": 0.35
+      },
+      {
+        "value": "tent",
+        "weight": 0.325
+      },
+      {
+        "value": "reception_table",
+        "weight": 0.15
+      },
+      {
+        "value": "dance_floor",
+        "weight": 0.15
+      }
+    ],
+    "preferred_lighting": [
+      {
+        "value": "warm_indoor",
+        "weight": 0.725
+      },
+      {
+        "value": "uplighting_warm",
+        "weight": 0.25
+      }
+    ],
+    "preferred_camera": [
+      {
+        "value": "slight_handheld",
+        "weight": 0.75
+      },
+      {
+        "value": "locked",
+        "weight": 0.225
+      }
+    ],
+    "preferred_mood": [
+      {
+        "value": "joyful",
+        "weight": 0.575
+      },
+      {
+        "value": "celebratory",
+        "weight": 0.2
+      },
+      {
+        "value": "tender",
+        "weight": 0.075
+      },
+      {
+        "value": "intimate",
+        "weight": 0.05
+      }
+    ],
+    "common_actions": [
+      {
+        "action": "feeding cake bite",
+        "count": 3
+      },
+      {
+        "action": "feeding each other cake",
+        "count": 3
+      },
+      {
+        "action": "cutting wedding cake",
+        "count": 2
+      },
+      {
+        "action": "feeding cake to groom",
+        "count": 2
+      },
+      {
+        "action": "best man toast speech",
+        "count": 2
+      },
+      {
+        "action": "feeding cake mutually",
+        "count": 1
+      },
+      {
+        "action": "smiling at cake",
+        "count": 1
+      },
+      {
+        "action": "tasting cake bite",
+        "count": 1
+      },
+      {
+        "action": "slicing cake together",
+        "count": 1
+      },
+      {
+        "action": "cutting cake laughing",
+        "count": 1
+      },
+      {
+        "action": "serving the slice",
+        "count": 1
+      },
+      {
+        "action": "lifting cake plate",
+        "count": 1
+      },
+      {
+        "action": "presenting cake plate",
+        "count": 1
+      },
+      {
+        "action": "show wedding cake",
+        "count": 1
+      },
+      {
+        "action": "cut wedding cake",
+        "count": 1
+      }
+    ],
+    "scoring_recipe": "score = 0.30*subject_match + 0.25*setting_match + 0.20*mood_match + 0.15*lighting_match + 0.10*camera_match. Each match = preferred-vocab weight if present else 0. Reject candidates whose duration is outside acceptable_range_sec unless no in-range candidate exists for the slot."
+  },
+  "dancing": {
+    "label": "dancing",
+    "active": true,
+    "n_clips_observed": 164,
+    "duration": {
+      "target_mean_sec": 3.879,
+      "target_median_sec": 1.939,
+      "acceptable_range_sec": [
+        0.709,
+        8.55
+      ],
+      "stdev_sec": 6.467
+    },
+    "preferred_subjects": [
+      {
+        "value": "guests",
+        "weight": 0.371
+      },
+      {
+        "value": "bride",
+        "weight": 0.164
+      },
+      {
+        "value": "parents",
+        "weight": 0.159
+      },
+      {
+        "value": "groom",
+        "weight": 0.108
+      },
+      {
+        "value": "couple",
+        "weight": 0.082
+      }
+    ],
+    "preferred_settings": [
+      {
+        "value": "dance_floor",
+        "weight": 0.677
+      },
+      {
+        "value": "tent",
+        "weight": 0.085
+      },
+      {
+        "value": "ballroom",
+        "weight": 0.073
+      }
+    ],
+    "preferred_lighting": [
+      {
+        "value": "warm_indoor",
+        "weight": 0.494
+      },
+      {
+        "value": "uplighting_warm",
+        "weight": 0.128
+      },
+      {
+        "value": "uplighting_cool",
+        "weight": 0.128
+      },
+      {
+        "value": "overcast",
+        "weight": 0.085
+      },
+      {
+        "value": "dance_floor",
+        "weight": 0.067
+      }
+    ],
+    "preferred_camera": [
+      {
+        "value": "slight_handheld",
+        "weight": 0.463
+      },
+      {
+        "value": "handheld",
+        "weight": 0.287
+      },
+      {
+        "value": "locked",
+        "weight": 0.244
+      }
+    ],
+    "preferred_mood": [
+      {
+        "value": "kinetic",
+        "weight": 0.268
+      },
+      {
+        "value": "tender",
+        "weight": 0.244
+      },
+      {
+        "value": "celebratory",
+        "weight": 0.171
+      },
+      {
+        "value": "joyful",
+        "weight": 0.146
+      },
+      {
+        "value": "ceremonial",
+        "weight": 0.073
+      }
+    ],
+    "common_actions": [
+      {
+        "action": "father daughter dance",
+        "count": 7
+      },
+      {
+        "action": "mother son dance",
+        "count": 6
+      },
+      {
+        "action": "dancing on floor",
+        "count": 4
+      },
+      {
+        "action": "slow dancing",
+        "count": 4
+      },
+      {
+        "action": "dancing close together",
+        "count": 2
+      },
+      {
+        "action": "dancing arms raised",
+        "count": 2
+      },
+      {
+        "action": "guest dancing for crowd",
+        "count": 2
+      },
+      {
+        "action": "father spins bride",
+        "count": 2
+      },
+      {
+        "action": "mother child dance",
+        "count": 2
+      },
+      {
+        "action": "walking holding hands",
+        "count": 2
+      },
+      {
+        "action": "laughing at speech",
+        "count": 2
+      },
+      {
+        "action": "twirling on lawn together",
+        "count": 2
+      },
+      {
+        "action": "breakdancing low",
+        "count": 1
+      },
+      {
+        "action": "young boy dancing",
+        "count": 1
+      },
+      {
+        "action": "boy on shoulders",
+        "count": 1
+      }
+    ],
+    "scoring_recipe": "score = 0.30*subject_match + 0.25*setting_match + 0.20*mood_match + 0.15*lighting_match + 0.10*camera_match. Each match = preferred-vocab weight if present else 0. Reject candidates whose duration is outside acceptable_range_sec unless no in-range candidate exists for the slot."
+  },
+  "send_off": {
+    "label": "send_off",
+    "active": true,
+    "n_clips_observed": 30,
+    "duration": {
+      "target_mean_sec": 3.111,
+      "target_median_sec": 2.231,
+      "acceptable_range_sec": [
+        0.833,
+        7.716
+      ],
+      "stdev_sec": 2.564
+    },
+    "preferred_subjects": [
+      {
+        "value": "couple",
+        "weight": 0.742
+      },
+      {
+        "value": "details_only",
+        "weight": 0.226
+      }
+    ],
+    "preferred_settings": [
+      {
+        "value": "exterior_landscape",
+        "weight": 0.9
+      },
+      {
+        "value": "dance_floor",
+        "weight": 0.067
+      }
+    ],
+    "preferred_lighting": [
+      {
+        "value": "night_exterior",
+        "weight": 0.667
+      },
+      {
+        "value": "golden_hour",
+        "weight": 0.2
+      },
+      {
+        "value": "warm_indoor",
+        "weight": 0.067
+      }
+    ],
+    "preferred_camera": [
+      {
+        "value": "locked",
+        "weight": 0.633
+      },
+      {
+        "value": "slight_handheld",
+        "weight": 0.2
+      },
+      {
+        "value": "gimbal_walk",
+        "weight": 0.133
+      }
+    ],
+    "preferred_mood": [
+      {
+        "value": "intimate",
+        "weight": 0.367
+      },
+      {
+        "value": "tender",
+        "weight": 0.333
+      },
+      {
+        "value": "celebratory",
+        "weight": 0.3
+      }
+    ],
+    "common_actions": [
+      {
+        "action": "embracing by fire",
+        "count": 3
+      },
+      {
+        "action": "walking under lights",
+        "count": 2
+      },
+      {
+        "action": "kissing under lights",
+        "count": 2
+      },
+      {
+        "action": "intimate moment seated",
+        "count": 1
+      },
+      {
+        "action": "firework bursting over trees",
+        "count": 1
+      },
+      {
+        "action": "watching fireworks together",
+        "count": 1
+      },
+      {
+        "action": "firework bursting in sky",
+        "count": 1
+      },
+      {
+        "action": "fireworks cluster bursting",
+        "count": 1
+      },
+      {
+        "action": "fireworks falling sparks",
+        "count": 1
+      },
+      {
+        "action": "red and blue firework",
+        "count": 1
+      },
+      {
+        "action": "blue and red sparks",
+        "count": 1
+      },
+      {
+        "action": "teal firework over trees",
+        "count": 1
+      },
+      {
+        "action": "embracing under fireworks",
+        "count": 1
+      },
+      {
+        "action": "walking holding hands",
+        "count": 1
+      },
+      {
+        "action": "kissing on dance floor",
+        "count": 1
+      }
+    ],
+    "scoring_recipe": "score = 0.30*subject_match + 0.25*setting_match + 0.20*mood_match + 0.15*lighting_match + 0.10*camera_match. Each match = preferred-vocab weight if present else 0. Reject candidates whose duration is outside acceptable_range_sec unless no in-range candidate exists for the slot."
+  },
+  "establishing": {
+    "label": "establishing",
+    "active": true,
+    "n_clips_observed": 105,
+    "duration": {
+      "target_mean_sec": 2.44,
+      "target_median_sec": 1.919,
+      "acceptable_range_sec": [
+        0.792,
+        4.671
+      ],
+      "stdev_sec": 2.27
+    },
+    "preferred_subjects": [
+      {
+        "value": "details_only",
+        "weight": 0.438
+      },
+      {
+        "value": "couple",
+        "weight": 0.1
+      },
+      {
+        "value": "guests",
+        "weight": 0.1
+      },
+      {
+        "value": "wedding_party",
+        "weight": 0.1
+      },
+      {
+        "value": "groom",
+        "weight": 0.062
+      },
+      {
+        "value": "bride",
+        "weight": 0.062
+      },
+      {
+        "value": "family",
+        "weight": 0.062
+      }
+    ],
+    "preferred_settings": [
+      {
+        "value": "exterior_landscape",
+        "weight": 0.514
+      },
+      {
+        "value": "garden",
+        "weight": 0.114
+      },
+      {
+        "value": "altar",
+        "weight": 0.095
+      },
+      {
+        "value": "interior_other",
+        "weight": 0.095
+      }
+    ],
+    "preferred_lighting": [
+      {
+        "value": "natural_daylight",
+        "weight": 0.4
+      },
+      {
+        "value": "overcast",
+        "weight": 0.295
+      },
+      {
+        "value": "golden_hour",
+        "weight": 0.143
+      },
+      {
+        "value": "warm_indoor",
+        "weight": 0.105
+      }
+    ],
+    "preferred_camera": [
+      {
+        "value": "locked",
+        "weight": 0.552
+      },
+      {
+        "value": "slight_handheld",
+        "weight": 0.333
+      }
+    ],
+    "preferred_mood": [
+      {
+        "value": "still",
+        "weight": 0.39
+      },
+      {
+        "value": "anticipatory",
+        "weight": 0.152
+      },
+      {
+        "value": "candid",
+        "weight": 0.152
+      },
+      {
+        "value": "celebratory",
+        "weight": 0.076
+      },
+      {
+        "value": "tender",
+        "weight": 0.076
+      },
+      {
+        "value": "joyful",
+        "weight": 0.076
+      },
+      {
+        "value": "ceremonial",
+        "weight": 0.067
+      }
+    ],
+    "common_actions": [
+      {
+        "action": "pose with dog",
+        "count": 2
+      },
+      {
+        "action": "recite vows aloud",
+        "count": 2
+      },
+      {
+        "action": "showing potted plants",
+        "count": 2
+      },
+      {
+        "action": "exiting shuttle bus",
+        "count": 2
+      },
+      {
+        "action": "show venue exterior",
+        "count": 2
+      },
+      {
+        "action": "show autumn leaves",
+        "count": 2
+      },
+      {
+        "action": "title card overlay on grass",
+        "count": 2
+      },
+      {
+        "action": "toasting champagne",
+        "count": 1
+      },
+      {
+        "action": "leaning foreheads close",
+        "count": 1
+      },
+      {
+        "action": "sunset water rocks",
+        "count": 1
+      },
+      {
+        "action": "approaching cake",
+        "count": 1
+      },
+      {
+        "action": "cutting wedding cake",
+        "count": 1
+      },
+      {
+        "action": "mother son dance smiling",
+        "count": 1
+      },
+      {
+        "action": "reception venue at night",
+        "count": 1
+      },
+      {
+        "action": "reception venue night",
+        "count": 1
+      }
+    ],
+    "scoring_recipe": "score = 0.30*subject_match + 0.25*setting_match + 0.20*mood_match + 0.15*lighting_match + 0.10*camera_match. Each match = preferred-vocab weight if present else 0. Reject candidates whose duration is outside acceptable_range_sec unless no in-range candidate exists for the slot."
+  },
+  "transition": {
+    "label": "transition",
+    "active": true,
+    "n_clips_observed": 51,
+    "duration": {
+      "target_mean_sec": 2.925,
+      "target_median_sec": 2.628,
+      "acceptable_range_sec": [
+        1.043,
+        5.38
+      ],
+      "stdev_sec": 1.801
+    },
+    "preferred_subjects": [
+      {
+        "value": "couple",
+        "weight": 0.4
+      },
+      {
+        "value": "wedding_party",
+        "weight": 0.2
+      },
+      {
+        "value": "details_only",
+        "weight": 0.133
+      },
+      {
+        "value": "bride",
+        "weight": 0.1
+      },
+      {
+        "value": "guests",
+        "weight": 0.083
+      },
+      {
+        "value": "groom",
+        "weight": 0.067
+      }
+    ],
+    "preferred_settings": [
+      {
+        "value": "exterior_landscape",
+        "weight": 0.353
+      },
+      {
+        "value": "lawn",
+        "weight": 0.353
+      },
+      {
+        "value": "garden",
+        "weight": 0.118
+      },
+      {
+        "value": "ceremony_seating",
+        "weight": 0.078
+      },
+      {
+        "value": "interior_other",
+        "weight": 0.059
+      }
+    ],
+    "preferred_lighting": [
+      {
+        "value": "natural_daylight",
+        "weight": 0.765
+      },
+      {
+        "value": "night_exterior",
+        "weight": 0.098
+      },
+      {
+        "value": "overcast",
+        "weight": 0.059
+      },
+      {
+        "value": "dim_indoor",
+        "weight": 0.059
+      }
+    ],
+    "preferred_camera": [
+      {
+        "value": "slight_handheld",
+        "weight": 0.627
+      },
+      {
+        "value": "locked",
+        "weight": 0.196
+      },
+      {
+        "value": "gimbal_walk",
+        "weight": 0.157
+      }
+    ],
+    "preferred_mood": [
+      {
+        "value": "joyful",
+        "weight": 0.275
+      },
+      {
+        "value": "still",
+        "weight": 0.235
+      },
+      {
+        "value": "tender",
+        "weight": 0.235
+      },
+      {
+        "value": "ceremonial",
+        "weight": 0.078
+      },
+      {
+        "value": "intimate",
+        "weight": 0.059
+      },
+      {
+        "value": "anticipatory",
+        "weight": 0.059
+      },
+      {
+        "value": "candid",
+        "weight": 0.059
+      }
+    ],
+    "common_actions": [
+      {
+        "action": "fade to black",
+        "count": 4
+      },
+      {
+        "action": "fire pit burning",
+        "count": 2
+      },
+      {
+        "action": "walking across meadow",
+        "count": 2
+      },
+      {
+        "action": "walking to ceremony",
+        "count": 2
+      },
+      {
+        "action": "watching ceremony",
+        "count": 2
+      },
+      {
+        "action": "walking through field together",
+        "count": 1
+      },
+      {
+        "action": "slow dance under lamp",
+        "count": 1
+      },
+      {
+        "action": "kiss under night sky",
+        "count": 1
+      },
+      {
+        "action": "first look reveal",
+        "count": 1
+      },
+      {
+        "action": "holding hands first look",
+        "count": 1
+      },
+      {
+        "action": "smiling face to face",
+        "count": 1
+      },
+      {
+        "action": "kissing forehead",
+        "count": 1
+      },
+      {
+        "action": "walking through ferns",
+        "count": 1
+      },
+      {
+        "action": "laughing in ferns",
+        "count": 1
+      },
+      {
+        "action": "walking with bouquet",
+        "count": 1
+      }
+    ],
+    "scoring_recipe": "score = 0.30*subject_match + 0.25*setting_match + 0.20*mood_match + 0.15*lighting_match + 0.10*camera_match. Each match = preferred-vocab weight if present else 0. Reject candidates whose duration is outside acceptable_range_sec unless no in-range candidate exists for the slot."
+  },
+  "other": {
+    "label": "other",
+    "active": true,
+    "n_clips_observed": 152,
+    "duration": {
+      "target_mean_sec": 2.036,
+      "target_median_sec": 1.46,
+      "acceptable_range_sec": [
+        0.584,
+        3.212
+      ],
+      "stdev_sec": 2.719
+    },
+    "preferred_subjects": [
+      {
+        "value": "guests",
+        "weight": 0.352
+      },
+      {
+        "value": "groom",
+        "weight": 0.156
+      },
+      {
+        "value": "parents",
+        "weight": 0.085
+      },
+      {
+        "value": "details_only",
+        "weight": 0.085
+      },
+      {
+        "value": "bride",
+        "weight": 0.08
+      },
+      {
+        "value": "wedding_party",
+        "weight": 0.08
+      },
+      {
+        "value": "family",
+        "weight": 0.07
+      }
+    ],
+    "preferred_settings": [
+      {
+        "value": "exterior_landscape",
+        "weight": 0.388
+      },
+      {
+        "value": "reception_table",
+        "weight": 0.151
+      },
+      {
+        "value": "interior_other",
+        "weight": 0.118
+      },
+      {
+        "value": "dance_floor",
+        "weight": 0.105
+      },
+      {
+        "value": "lawn",
+        "weight": 0.092
+      }
+    ],
+    "preferred_lighting": [
+      {
+        "value": "warm_indoor",
+        "weight": 0.27
+      },
+      {
+        "value": "natural_daylight",
+        "weight": 0.27
+      },
+      {
+        "value": "overcast",
+        "weight": 0.25
+      },
+      {
+        "value": "golden_hour",
+        "weight": 0.059
+      },
+      {
+        "value": "uplighting_warm",
+        "weight": 0.053
+      },
+      {
+        "value": "dim_indoor",
+        "weight": 0.053
+      }
+    ],
+    "preferred_camera": [
+      {
+        "value": "slight_handheld",
+        "weight": 0.539
+      },
+      {
+        "value": "locked",
+        "weight": 0.408
+      }
+    ],
+    "preferred_mood": [
+      {
+        "value": "candid",
+        "weight": 0.336
+      },
+      {
+        "value": "joyful",
+        "weight": 0.178
+      },
+      {
+        "value": "tender",
+        "weight": 0.145
+      },
+      {
+        "value": "kinetic",
+        "weight": 0.105
+      },
+      {
+        "value": "still",
+        "weight": 0.079
+      },
+      {
+        "value": "anticipatory",
+        "weight": 0.072
+      }
+    ],
+    "common_actions": [
+      {
+        "action": "mother-son dance",
+        "count": 3
+      },
+      {
+        "action": "smiling at conversation",
+        "count": 3
+      },
+      {
+        "action": "paddleboarding on lake",
+        "count": 3
+      },
+      {
+        "action": "running across lawn",
+        "count": 3
+      },
+      {
+        "action": "father-daughter dance",
+        "count": 2
+      },
+      {
+        "action": "embracing during dance",
+        "count": 2
+      },
+      {
+        "action": "smiling seated",
+        "count": 2
+      },
+      {
+        "action": "telling story at table",
+        "count": 2
+      },
+      {
+        "action": "father daughter dance",
+        "count": 2
+      },
+      {
+        "action": "walk through hills",
+        "count": 2
+      },
+      {
+        "action": "chat at table",
+        "count": 2
+      },
+      {
+        "action": "best man toast speech",
+        "count": 2
+      },
+      {
+        "action": "groomsmen cut cake together",
+        "count": 2
+      },
+      {
+        "action": "groomsmen laughing together",
+        "count": 2
+      },
+      {
+        "action": "fade to black",
+        "count": 2
+      }
+    ],
+    "scoring_recipe": "score = 0.30*subject_match + 0.25*setting_match + 0.20*mood_match + 0.15*lighting_match + 0.10*camera_match. Each match = preferred-vocab weight if present else 0. Reject candidates whose duration is outside acceptable_range_sec unless no in-range candidate exists for the slot."
+  }
+}

@@ -1,0 +1,2639 @@
+{
+  "version": "1.0",
+  "n_films": 17,
+  "n_transitions_observed": 610,
+  "scene_presence": [
+    {
+      "label": "getting_ready",
+      "presence_pct": 88.2,
+      "policy": "expected"
+    },
+    {
+      "label": "details",
+      "presence_pct": 76.5,
+      "policy": "expected"
+    },
+    {
+      "label": "first_look",
+      "presence_pct": 76.5,
+      "policy": "expected"
+    },
+    {
+      "label": "portraits",
+      "presence_pct": 100.0,
+      "policy": "required"
+    },
+    {
+      "label": "ceremony",
+      "presence_pct": 76.5,
+      "policy": "expected"
+    },
+    {
+      "label": "ceremony_processional",
+      "presence_pct": 100.0,
+      "policy": "required"
+    },
+    {
+      "label": "ceremony_vows",
+      "presence_pct": 76.5,
+      "policy": "expected"
+    },
+    {
+      "label": "ceremony_recessional",
+      "presence_pct": 52.9,
+      "policy": "optional"
+    },
+    {
+      "label": "cocktail_hour",
+      "presence_pct": 76.5,
+      "policy": "expected"
+    },
+    {
+      "label": "reception_entrance",
+      "presence_pct": 47.1,
+      "policy": "optional"
+    },
+    {
+      "label": "first_dance",
+      "presence_pct": 76.5,
+      "policy": "expected"
+    },
+    {
+      "label": "speeches",
+      "presence_pct": 94.1,
+      "policy": "required"
+    },
+    {
+      "label": "toasts",
+      "presence_pct": 23.5,
+      "policy": "rare"
+    },
+    {
+      "label": "cake_cutting",
+      "presence_pct": 47.1,
+      "policy": "optional"
+    },
+    {
+      "label": "dancing",
+      "presence_pct": 88.2,
+      "policy": "expected"
+    },
+    {
+      "label": "send_off",
+      "presence_pct": 29.4,
+      "policy": "optional"
+    },
+    {
+      "label": "establishing",
+      "presence_pct": 70.6,
+      "policy": "expected"
+    },
+    {
+      "label": "transition",
+      "presence_pct": 35.3,
+      "policy": "optional"
+    },
+    {
+      "label": "other",
+      "presence_pct": 47.1,
+      "policy": "optional"
+    }
+  ],
+  "starts": [
+    {
+      "label": "getting_ready",
+      "count": 8
+    },
+    {
+      "label": "establishing",
+      "count": 5
+    },
+    {
+      "label": "first_look",
+      "count": 1
+    },
+    {
+      "label": "details",
+      "count": 1
+    },
+    {
+      "label": "portraits",
+      "count": 1
+    },
+    {
+      "label": "other",
+      "count": 1
+    }
+  ],
+  "ends": [
+    {
+      "label": "portraits",
+      "count": 5
+    },
+    {
+      "label": "transition",
+      "count": 4
+    },
+    {
+      "label": "send_off",
+      "count": 3
+    },
+    {
+      "label": "other",
+      "count": 2
+    },
+    {
+      "label": "dancing",
+      "count": 1
+    },
+    {
+      "label": "establishing",
+      "count": 1
+    },
+    {
+      "label": "first_dance",
+      "count": 1
+    }
+  ],
+  "forward_probs": {
+    "getting_ready": [
+      {
+        "label": "getting_ready",
+        "count": 31,
+        "prob": 0.62
+      },
+      {
+        "label": "first_look",
+        "count": 6,
+        "prob": 0.12
+      },
+      {
+        "label": "portraits",
+        "count": 4,
+        "prob": 0.08
+      },
+      {
+        "label": "details",
+        "count": 3,
+        "prob": 0.06
+      },
+      {
+        "label": "establishing",
+        "count": 2,
+        "prob": 0.04
+      },
+      {
+        "label": "ceremony_processional",
+        "count": 2,
+        "prob": 0.04
+      },
+      {
+        "label": "ceremony",
+        "count": 1,
+        "prob": 0.02
+      },
+      {
+        "label": "ceremony_vows",
+        "count": 1,
+        "prob": 0.02
+      }
+    ],
+    "portraits": [
+      {
+        "label": "portraits",
+        "count": 25,
+        "prob": 0.446
+      },
+      {
+        "label": "other",
+        "count": 7,
+        "prob": 0.125
+      },
+      {
+        "label": "cocktail_hour",
+        "count": 5,
+        "prob": 0.089
+      },
+      {
+        "label": "ceremony_processional",
+        "count": 4,
+        "prob": 0.071
+      },
+      {
+        "label": "details",
+        "count": 3,
+        "prob": 0.054
+      },
+      {
+        "label": "first_look",
+        "count": 2,
+        "prob": 0.036
+      },
+      {
+        "label": "establishing",
+        "count": 2,
+        "prob": 0.036
+      },
+      {
+        "label": "ceremony_vows",
+        "count": 2,
+        "prob": 0.036
+      },
+      {
+        "label": "dancing",
+        "count": 2,
+        "prob": 0.036
+      },
+      {
+        "label": "transition",
+        "count": 2,
+        "prob": 0.036
+      },
+      {
+        "label": "speeches",
+        "count": 1,
+        "prob": 0.018
+      },
+      {
+        "label": "reception_entrance",
+        "count": 1,
+        "prob": 0.018
+      }
+    ],
+    "first_look": [
+      {
+        "label": "first_look",
+        "count": 20,
+        "prob": 0.588
+      },
+      {
+        "label": "portraits",
+        "count": 8,
+        "prob": 0.235
+      },
+      {
+        "label": "ceremony",
+        "count": 2,
+        "prob": 0.059
+      },
+      {
+        "label": "establishing",
+        "count": 2,
+        "prob": 0.059
+      },
+      {
+        "label": "getting_ready",
+        "count": 1,
+        "prob": 0.029
+      },
+      {
+        "label": "ceremony_processional",
+        "count": 1,
+        "prob": 0.029
+      }
+    ],
+    "cocktail_hour": [
+      {
+        "label": "cocktail_hour",
+        "count": 22,
+        "prob": 0.5
+      },
+      {
+        "label": "ceremony",
+        "count": 3,
+        "prob": 0.068
+      },
+      {
+        "label": "details",
+        "count": 3,
+        "prob": 0.068
+      },
+      {
+        "label": "portraits",
+        "count": 2,
+        "prob": 0.045
+      },
+      {
+        "label": "dancing",
+        "count": 2,
+        "prob": 0.045
+      },
+      {
+        "label": "speeches",
+        "count": 2,
+        "prob": 0.045
+      },
+      {
+        "label": "ceremony_processional",
+        "count": 2,
+        "prob": 0.045
+      },
+      {
+        "label": "first_dance",
+        "count": 2,
+        "prob": 0.045
+      },
+      {
+        "label": "toasts",
+        "count": 2,
+        "prob": 0.045
+      },
+      {
+        "label": "reception_entrance",
+        "count": 2,
+        "prob": 0.045
+      },
+      {
+        "label": "other",
+        "count": 1,
+        "prob": 0.023
+      },
+      {
+        "label": "establishing",
+        "count": 1,
+        "prob": 0.023
+      }
+    ],
+    "ceremony": [
+      {
+        "label": "ceremony",
+        "count": 25,
+        "prob": 0.521
+      },
+      {
+        "label": "ceremony_processional",
+        "count": 9,
+        "prob": 0.188
+      },
+      {
+        "label": "ceremony_vows",
+        "count": 6,
+        "prob": 0.125
+      },
+      {
+        "label": "ceremony_recessional",
+        "count": 3,
+        "prob": 0.062
+      },
+      {
+        "label": "cocktail_hour",
+        "count": 2,
+        "prob": 0.042
+      },
+      {
+        "label": "establishing",
+        "count": 1,
+        "prob": 0.021
+      },
+      {
+        "label": "portraits",
+        "count": 1,
+        "prob": 0.021
+      },
+      {
+        "label": "other",
+        "count": 1,
+        "prob": 0.021
+      }
+    ],
+    "ceremony_processional": [
+      {
+        "label": "ceremony_processional",
+        "count": 19,
+        "prob": 0.442
+      },
+      {
+        "label": "ceremony",
+        "count": 8,
+        "prob": 0.186
+      },
+      {
+        "label": "ceremony_vows",
+        "count": 8,
+        "prob": 0.186
+      },
+      {
+        "label": "portraits",
+        "count": 2,
+        "prob": 0.047
+      },
+      {
+        "label": "cocktail_hour",
+        "count": 1,
+        "prob": 0.023
+      },
+      {
+        "label": "establishing",
+        "count": 1,
+        "prob": 0.023
+      },
+      {
+        "label": "first_look",
+        "count": 1,
+        "prob": 0.023
+      },
+      {
+        "label": "getting_ready",
+        "count": 1,
+        "prob": 0.023
+      },
+      {
+        "label": "ceremony_recessional",
+        "count": 1,
+        "prob": 0.023
+      },
+      {
+        "label": "details",
+        "count": 1,
+        "prob": 0.023
+      }
+    ],
+    "ceremony_vows": [
+      {
+        "label": "ceremony_vows",
+        "count": 11,
+        "prob": 0.393
+      },
+      {
+        "label": "ceremony_recessional",
+        "count": 5,
+        "prob": 0.179
+      },
+      {
+        "label": "cocktail_hour",
+        "count": 4,
+        "prob": 0.143
+      },
+      {
+        "label": "ceremony_processional",
+        "count": 3,
+        "prob": 0.107
+      },
+      {
+        "label": "portraits",
+        "count": 2,
+        "prob": 0.071
+      },
+      {
+        "label": "details",
+        "count": 1,
+        "prob": 0.036
+      },
+      {
+        "label": "establishing",
+        "count": 1,
+        "prob": 0.036
+      },
+      {
+        "label": "ceremony",
+        "count": 1,
+        "prob": 0.036
+      }
+    ],
+    "ceremony_recessional": [
+      {
+        "label": "cocktail_hour",
+        "count": 6,
+        "prob": 0.545
+      },
+      {
+        "label": "ceremony_recessional",
+        "count": 2,
+        "prob": 0.182
+      },
+      {
+        "label": "reception_entrance",
+        "count": 1,
+        "prob": 0.091
+      },
+      {
+        "label": "portraits",
+        "count": 1,
+        "prob": 0.091
+      },
+      {
+        "label": "other",
+        "count": 1,
+        "prob": 0.091
+      }
+    ],
+    "other": [
+      {
+        "label": "other",
+        "count": 25,
+        "prob": 0.61
+      },
+      {
+        "label": "establishing",
+        "count": 3,
+        "prob": 0.073
+      },
+      {
+        "label": "details",
+        "count": 2,
+        "prob": 0.049
+      },
+      {
+        "label": "toasts",
+        "count": 2,
+        "prob": 0.049
+      },
+      {
+        "label": "ceremony",
+        "count": 2,
+        "prob": 0.049
+      },
+      {
+        "label": "getting_ready",
+        "count": 2,
+        "prob": 0.049
+      },
+      {
+        "label": "cocktail_hour",
+        "count": 1,
+        "prob": 0.024
+      },
+      {
+        "label": "first_dance",
+        "count": 1,
+        "prob": 0.024
+      },
+      {
+        "label": "portraits",
+        "count": 1,
+        "prob": 0.024
+      },
+      {
+        "label": "ceremony_processional",
+        "count": 1,
+        "prob": 0.024
+      },
+      {
+        "label": "speeches",
+        "count": 1,
+        "prob": 0.024
+      }
+    ],
+    "details": [
+      {
+        "label": "speeches",
+        "count": 3,
+        "prob": 0.143
+      },
+      {
+        "label": "cake_cutting",
+        "count": 3,
+        "prob": 0.143
+      },
+      {
+        "label": "getting_ready",
+        "count": 3,
+        "prob": 0.143
+      },
+      {
+        "label": "details",
+        "count": 2,
+        "prob": 0.095
+      },
+      {
+        "label": "ceremony",
+        "count": 2,
+        "prob": 0.095
+      },
+      {
+        "label": "first_dance",
+        "count": 2,
+        "prob": 0.095
+      },
+      {
+        "label": "reception_entrance",
+        "count": 1,
+        "prob": 0.048
+      },
+      {
+        "label": "portraits",
+        "count": 1,
+        "prob": 0.048
+      },
+      {
+        "label": "toasts",
+        "count": 1,
+        "prob": 0.048
+      },
+      {
+        "label": "first_look",
+        "count": 1,
+        "prob": 0.048
+      },
+      {
+        "label": "other",
+        "count": 1,
+        "prob": 0.048
+      },
+      {
+        "label": "dancing",
+        "count": 1,
+        "prob": 0.048
+      }
+    ],
+    "speeches": [
+      {
+        "label": "speeches",
+        "count": 21,
+        "prob": 0.5
+      },
+      {
+        "label": "first_dance",
+        "count": 5,
+        "prob": 0.119
+      },
+      {
+        "label": "details",
+        "count": 3,
+        "prob": 0.071
+      },
+      {
+        "label": "portraits",
+        "count": 3,
+        "prob": 0.071
+      },
+      {
+        "label": "dancing",
+        "count": 3,
+        "prob": 0.071
+      },
+      {
+        "label": "other",
+        "count": 2,
+        "prob": 0.048
+      },
+      {
+        "label": "reception_entrance",
+        "count": 2,
+        "prob": 0.048
+      },
+      {
+        "label": "toasts",
+        "count": 1,
+        "prob": 0.024
+      },
+      {
+        "label": "cake_cutting",
+        "count": 1,
+        "prob": 0.024
+      },
+      {
+        "label": "send_off",
+        "count": 1,
+        "prob": 0.024
+      }
+    ],
+    "toasts": [
+      {
+        "label": "toasts",
+        "count": 7,
+        "prob": 0.5
+      },
+      {
+        "label": "cake_cutting",
+        "count": 1,
+        "prob": 0.071
+      },
+      {
+        "label": "establishing",
+        "count": 1,
+        "prob": 0.071
+      },
+      {
+        "label": "reception_entrance",
+        "count": 1,
+        "prob": 0.071
+      },
+      {
+        "label": "details",
+        "count": 1,
+        "prob": 0.071
+      },
+      {
+        "label": "speeches",
+        "count": 1,
+        "prob": 0.071
+      },
+      {
+        "label": "dancing",
+        "count": 1,
+        "prob": 0.071
+      },
+      {
+        "label": "first_dance",
+        "count": 1,
+        "prob": 0.071
+      }
+    ],
+    "cake_cutting": [
+      {
+        "label": "cake_cutting",
+        "count": 15,
+        "prob": 0.625
+      },
+      {
+        "label": "first_dance",
+        "count": 2,
+        "prob": 0.083
+      },
+      {
+        "label": "dancing",
+        "count": 2,
+        "prob": 0.083
+      },
+      {
+        "label": "send_off",
+        "count": 1,
+        "prob": 0.042
+      },
+      {
+        "label": "speeches",
+        "count": 1,
+        "prob": 0.042
+      },
+      {
+        "label": "other",
+        "count": 1,
+        "prob": 0.042
+      },
+      {
+        "label": "reception_entrance",
+        "count": 1,
+        "prob": 0.042
+      },
+      {
+        "label": "transition",
+        "count": 1,
+        "prob": 0.042
+      }
+    ],
+    "send_off": [
+      {
+        "label": "send_off",
+        "count": 10,
+        "prob": 0.833
+      },
+      {
+        "label": "transition",
+        "count": 2,
+        "prob": 0.167
+      }
+    ],
+    "reception_entrance": [
+      {
+        "label": "reception_entrance",
+        "count": 4,
+        "prob": 0.286
+      },
+      {
+        "label": "speeches",
+        "count": 2,
+        "prob": 0.143
+      },
+      {
+        "label": "first_dance",
+        "count": 2,
+        "prob": 0.143
+      },
+      {
+        "label": "dancing",
+        "count": 2,
+        "prob": 0.143
+      },
+      {
+        "label": "other",
+        "count": 1,
+        "prob": 0.071
+      },
+      {
+        "label": "portraits",
+        "count": 1,
+        "prob": 0.071
+      },
+      {
+        "label": "details",
+        "count": 1,
+        "prob": 0.071
+      },
+      {
+        "label": "cake_cutting",
+        "count": 1,
+        "prob": 0.071
+      }
+    ],
+    "establishing": [
+      {
+        "label": "establishing",
+        "count": 6,
+        "prob": 0.231
+      },
+      {
+        "label": "getting_ready",
+        "count": 4,
+        "prob": 0.154
+      },
+      {
+        "label": "ceremony",
+        "count": 4,
+        "prob": 0.154
+      },
+      {
+        "label": "first_look",
+        "count": 3,
+        "prob": 0.115
+      },
+      {
+        "label": "portraits",
+        "count": 3,
+        "prob": 0.115
+      },
+      {
+        "label": "cake_cutting",
+        "count": 1,
+        "prob": 0.038
+      },
+      {
+        "label": "transition",
+        "count": 1,
+        "prob": 0.038
+      },
+      {
+        "label": "ceremony_processional",
+        "count": 1,
+        "prob": 0.038
+      },
+      {
+        "label": "cocktail_hour",
+        "count": 1,
+        "prob": 0.038
+      },
+      {
+        "label": "other",
+        "count": 1,
+        "prob": 0.038
+      },
+      {
+        "label": "first_dance",
+        "count": 1,
+        "prob": 0.038
+      }
+    ],
+    "first_dance": [
+      {
+        "label": "first_dance",
+        "count": 25,
+        "prob": 0.595
+      },
+      {
+        "label": "dancing",
+        "count": 8,
+        "prob": 0.19
+      },
+      {
+        "label": "speeches",
+        "count": 5,
+        "prob": 0.119
+      },
+      {
+        "label": "send_off",
+        "count": 1,
+        "prob": 0.024
+      },
+      {
+        "label": "cocktail_hour",
+        "count": 1,
+        "prob": 0.024
+      },
+      {
+        "label": "toasts",
+        "count": 1,
+        "prob": 0.024
+      },
+      {
+        "label": "portraits",
+        "count": 1,
+        "prob": 0.024
+      }
+    ],
+    "dancing": [
+      {
+        "label": "dancing",
+        "count": 37,
+        "prob": 0.649
+      },
+      {
+        "label": "speeches",
+        "count": 5,
+        "prob": 0.088
+      },
+      {
+        "label": "portraits",
+        "count": 4,
+        "prob": 0.07
+      },
+      {
+        "label": "establishing",
+        "count": 2,
+        "prob": 0.035
+      },
+      {
+        "label": "send_off",
+        "count": 2,
+        "prob": 0.035
+      },
+      {
+        "label": "cake_cutting",
+        "count": 2,
+        "prob": 0.035
+      },
+      {
+        "label": "first_dance",
+        "count": 2,
+        "prob": 0.035
+      },
+      {
+        "label": "cocktail_hour",
+        "count": 1,
+        "prob": 0.018
+      },
+      {
+        "label": "reception_entrance",
+        "count": 1,
+        "prob": 0.018
+      },
+      {
+        "label": "other",
+        "count": 1,
+        "prob": 0.018
+      }
+    ],
+    "transition": [
+      {
+        "label": "transition",
+        "count": 1,
+        "prob": 0.333
+      },
+      {
+        "label": "portraits",
+        "count": 1,
+        "prob": 0.333
+      },
+      {
+        "label": "ceremony_processional",
+        "count": 1,
+        "prob": 0.333
+      }
+    ]
+  },
+  "backward_probs": {
+    "getting_ready": [
+      {
+        "label": "getting_ready",
+        "count": 31,
+        "prob": 0.738
+      },
+      {
+        "label": "establishing",
+        "count": 4,
+        "prob": 0.095
+      },
+      {
+        "label": "details",
+        "count": 3,
+        "prob": 0.071
+      },
+      {
+        "label": "other",
+        "count": 2,
+        "prob": 0.048
+      },
+      {
+        "label": "first_look",
+        "count": 1,
+        "prob": 0.024
+      },
+      {
+        "label": "ceremony_processional",
+        "count": 1,
+        "prob": 0.024
+      }
+    ],
+    "portraits": [
+      {
+        "label": "portraits",
+        "count": 25,
+        "prob": 0.417
+      },
+      {
+        "label": "first_look",
+        "count": 8,
+        "prob": 0.133
+      },
+      {
+        "label": "getting_ready",
+        "count": 4,
+        "prob": 0.067
+      },
+      {
+        "label": "dancing",
+        "count": 4,
+        "prob": 0.067
+      },
+      {
+        "label": "speeches",
+        "count": 3,
+        "prob": 0.05
+      },
+      {
+        "label": "establishing",
+        "count": 3,
+        "prob": 0.05
+      },
+      {
+        "label": "ceremony_processional",
+        "count": 2,
+        "prob": 0.033
+      },
+      {
+        "label": "cocktail_hour",
+        "count": 2,
+        "prob": 0.033
+      },
+      {
+        "label": "ceremony_vows",
+        "count": 2,
+        "prob": 0.033
+      },
+      {
+        "label": "transition",
+        "count": 1,
+        "prob": 0.017
+      },
+      {
+        "label": "ceremony_recessional",
+        "count": 1,
+        "prob": 0.017
+      },
+      {
+        "label": "ceremony",
+        "count": 1,
+        "prob": 0.017
+      },
+      {
+        "label": "reception_entrance",
+        "count": 1,
+        "prob": 0.017
+      },
+      {
+        "label": "details",
+        "count": 1,
+        "prob": 0.017
+      },
+      {
+        "label": "first_dance",
+        "count": 1,
+        "prob": 0.017
+      },
+      {
+        "label": "other",
+        "count": 1,
+        "prob": 0.017
+      }
+    ],
+    "first_look": [
+      {
+        "label": "first_look",
+        "count": 20,
+        "prob": 0.606
+      },
+      {
+        "label": "getting_ready",
+        "count": 6,
+        "prob": 0.182
+      },
+      {
+        "label": "establishing",
+        "count": 3,
+        "prob": 0.091
+      },
+      {
+        "label": "portraits",
+        "count": 2,
+        "prob": 0.061
+      },
+      {
+        "label": "ceremony_processional",
+        "count": 1,
+        "prob": 0.03
+      },
+      {
+        "label": "details",
+        "count": 1,
+        "prob": 0.03
+      }
+    ],
+    "cocktail_hour": [
+      {
+        "label": "cocktail_hour",
+        "count": 22,
+        "prob": 0.5
+      },
+      {
+        "label": "ceremony_recessional",
+        "count": 6,
+        "prob": 0.136
+      },
+      {
+        "label": "portraits",
+        "count": 5,
+        "prob": 0.114
+      },
+      {
+        "label": "ceremony_vows",
+        "count": 4,
+        "prob": 0.091
+      },
+      {
+        "label": "ceremony",
+        "count": 2,
+        "prob": 0.045
+      },
+      {
+        "label": "other",
+        "count": 1,
+        "prob": 0.023
+      },
+      {
+        "label": "ceremony_processional",
+        "count": 1,
+        "prob": 0.023
+      },
+      {
+        "label": "dancing",
+        "count": 1,
+        "prob": 0.023
+      },
+      {
+        "label": "first_dance",
+        "count": 1,
+        "prob": 0.023
+      },
+      {
+        "label": "establishing",
+        "count": 1,
+        "prob": 0.023
+      }
+    ],
+    "ceremony": [
+      {
+        "label": "ceremony",
+        "count": 25,
+        "prob": 0.521
+      },
+      {
+        "label": "ceremony_processional",
+        "count": 8,
+        "prob": 0.167
+      },
+      {
+        "label": "establishing",
+        "count": 4,
+        "prob": 0.083
+      },
+      {
+        "label": "cocktail_hour",
+        "count": 3,
+        "prob": 0.062
+      },
+      {
+        "label": "first_look",
+        "count": 2,
+        "prob": 0.042
+      },
+      {
+        "label": "details",
+        "count": 2,
+        "prob": 0.042
+      },
+      {
+        "label": "other",
+        "count": 2,
+        "prob": 0.042
+      },
+      {
+        "label": "getting_ready",
+        "count": 1,
+        "prob": 0.021
+      },
+      {
+        "label": "ceremony_vows",
+        "count": 1,
+        "prob": 0.021
+      }
+    ],
+    "ceremony_processional": [
+      {
+        "label": "ceremony_processional",
+        "count": 19,
+        "prob": 0.442
+      },
+      {
+        "label": "ceremony",
+        "count": 9,
+        "prob": 0.209
+      },
+      {
+        "label": "portraits",
+        "count": 4,
+        "prob": 0.093
+      },
+      {
+        "label": "ceremony_vows",
+        "count": 3,
+        "prob": 0.07
+      },
+      {
+        "label": "cocktail_hour",
+        "count": 2,
+        "prob": 0.047
+      },
+      {
+        "label": "getting_ready",
+        "count": 2,
+        "prob": 0.047
+      },
+      {
+        "label": "establishing",
+        "count": 1,
+        "prob": 0.023
+      },
+      {
+        "label": "first_look",
+        "count": 1,
+        "prob": 0.023
+      },
+      {
+        "label": "transition",
+        "count": 1,
+        "prob": 0.023
+      },
+      {
+        "label": "other",
+        "count": 1,
+        "prob": 0.023
+      }
+    ],
+    "ceremony_vows": [
+      {
+        "label": "ceremony_vows",
+        "count": 11,
+        "prob": 0.393
+      },
+      {
+        "label": "ceremony_processional",
+        "count": 8,
+        "prob": 0.286
+      },
+      {
+        "label": "ceremony",
+        "count": 6,
+        "prob": 0.214
+      },
+      {
+        "label": "portraits",
+        "count": 2,
+        "prob": 0.071
+      },
+      {
+        "label": "getting_ready",
+        "count": 1,
+        "prob": 0.036
+      }
+    ],
+    "ceremony_recessional": [
+      {
+        "label": "ceremony_vows",
+        "count": 5,
+        "prob": 0.455
+      },
+      {
+        "label": "ceremony",
+        "count": 3,
+        "prob": 0.273
+      },
+      {
+        "label": "ceremony_recessional",
+        "count": 2,
+        "prob": 0.182
+      },
+      {
+        "label": "ceremony_processional",
+        "count": 1,
+        "prob": 0.091
+      }
+    ],
+    "other": [
+      {
+        "label": "other",
+        "count": 25,
+        "prob": 0.595
+      },
+      {
+        "label": "portraits",
+        "count": 7,
+        "prob": 0.167
+      },
+      {
+        "label": "speeches",
+        "count": 2,
+        "prob": 0.048
+      },
+      {
+        "label": "cocktail_hour",
+        "count": 1,
+        "prob": 0.024
+      },
+      {
+        "label": "ceremony_recessional",
+        "count": 1,
+        "prob": 0.024
+      },
+      {
+        "label": "reception_entrance",
+        "count": 1,
+        "prob": 0.024
+      },
+      {
+        "label": "cake_cutting",
+        "count": 1,
+        "prob": 0.024
+      },
+      {
+        "label": "ceremony",
+        "count": 1,
+        "prob": 0.024
+      },
+      {
+        "label": "details",
+        "count": 1,
+        "prob": 0.024
+      },
+      {
+        "label": "establishing",
+        "count": 1,
+        "prob": 0.024
+      },
+      {
+        "label": "dancing",
+        "count": 1,
+        "prob": 0.024
+      }
+    ],
+    "details": [
+      {
+        "label": "portraits",
+        "count": 3,
+        "prob": 0.15
+      },
+      {
+        "label": "speeches",
+        "count": 3,
+        "prob": 0.15
+      },
+      {
+        "label": "cocktail_hour",
+        "count": 3,
+        "prob": 0.15
+      },
+      {
+        "label": "getting_ready",
+        "count": 3,
+        "prob": 0.15
+      },
+      {
+        "label": "other",
+        "count": 2,
+        "prob": 0.1
+      },
+      {
+        "label": "details",
+        "count": 2,
+        "prob": 0.1
+      },
+      {
+        "label": "toasts",
+        "count": 1,
+        "prob": 0.05
+      },
+      {
+        "label": "reception_entrance",
+        "count": 1,
+        "prob": 0.05
+      },
+      {
+        "label": "ceremony_vows",
+        "count": 1,
+        "prob": 0.05
+      },
+      {
+        "label": "ceremony_processional",
+        "count": 1,
+        "prob": 0.05
+      }
+    ],
+    "speeches": [
+      {
+        "label": "speeches",
+        "count": 21,
+        "prob": 0.5
+      },
+      {
+        "label": "first_dance",
+        "count": 5,
+        "prob": 0.119
+      },
+      {
+        "label": "dancing",
+        "count": 5,
+        "prob": 0.119
+      },
+      {
+        "label": "details",
+        "count": 3,
+        "prob": 0.071
+      },
+      {
+        "label": "reception_entrance",
+        "count": 2,
+        "prob": 0.048
+      },
+      {
+        "label": "cocktail_hour",
+        "count": 2,
+        "prob": 0.048
+      },
+      {
+        "label": "toasts",
+        "count": 1,
+        "prob": 0.024
+      },
+      {
+        "label": "cake_cutting",
+        "count": 1,
+        "prob": 0.024
+      },
+      {
+        "label": "portraits",
+        "count": 1,
+        "prob": 0.024
+      },
+      {
+        "label": "other",
+        "count": 1,
+        "prob": 0.024
+      }
+    ],
+    "toasts": [
+      {
+        "label": "toasts",
+        "count": 7,
+        "prob": 0.5
+      },
+      {
+        "label": "other",
+        "count": 2,
+        "prob": 0.143
+      },
+      {
+        "label": "cocktail_hour",
+        "count": 2,
+        "prob": 0.143
+      },
+      {
+        "label": "speeches",
+        "count": 1,
+        "prob": 0.071
+      },
+      {
+        "label": "first_dance",
+        "count": 1,
+        "prob": 0.071
+      },
+      {
+        "label": "details",
+        "count": 1,
+        "prob": 0.071
+      }
+    ],
+    "cake_cutting": [
+      {
+        "label": "cake_cutting",
+        "count": 15,
+        "prob": 0.625
+      },
+      {
+        "label": "details",
+        "count": 3,
+        "prob": 0.125
+      },
+      {
+        "label": "dancing",
+        "count": 2,
+        "prob": 0.083
+      },
+      {
+        "label": "toasts",
+        "count": 1,
+        "prob": 0.042
+      },
+      {
+        "label": "establishing",
+        "count": 1,
+        "prob": 0.042
+      },
+      {
+        "label": "speeches",
+        "count": 1,
+        "prob": 0.042
+      },
+      {
+        "label": "reception_entrance",
+        "count": 1,
+        "prob": 0.042
+      }
+    ],
+    "send_off": [
+      {
+        "label": "send_off",
+        "count": 10,
+        "prob": 0.667
+      },
+      {
+        "label": "dancing",
+        "count": 2,
+        "prob": 0.133
+      },
+      {
+        "label": "cake_cutting",
+        "count": 1,
+        "prob": 0.067
+      },
+      {
+        "label": "first_dance",
+        "count": 1,
+        "prob": 0.067
+      },
+      {
+        "label": "speeches",
+        "count": 1,
+        "prob": 0.067
+      }
+    ],
+    "reception_entrance": [
+      {
+        "label": "reception_entrance",
+        "count": 4,
+        "prob": 0.286
+      },
+      {
+        "label": "speeches",
+        "count": 2,
+        "prob": 0.143
+      },
+      {
+        "label": "cocktail_hour",
+        "count": 2,
+        "prob": 0.143
+      },
+      {
+        "label": "ceremony_recessional",
+        "count": 1,
+        "prob": 0.071
+      },
+      {
+        "label": "details",
+        "count": 1,
+        "prob": 0.071
+      },
+      {
+        "label": "dancing",
+        "count": 1,
+        "prob": 0.071
+      },
+      {
+        "label": "toasts",
+        "count": 1,
+        "prob": 0.071
+      },
+      {
+        "label": "portraits",
+        "count": 1,
+        "prob": 0.071
+      },
+      {
+        "label": "cake_cutting",
+        "count": 1,
+        "prob": 0.071
+      }
+    ],
+    "establishing": [
+      {
+        "label": "establishing",
+        "count": 6,
+        "prob": 0.273
+      },
+      {
+        "label": "other",
+        "count": 3,
+        "prob": 0.136
+      },
+      {
+        "label": "dancing",
+        "count": 2,
+        "prob": 0.091
+      },
+      {
+        "label": "portraits",
+        "count": 2,
+        "prob": 0.091
+      },
+      {
+        "label": "first_look",
+        "count": 2,
+        "prob": 0.091
+      },
+      {
+        "label": "getting_ready",
+        "count": 2,
+        "prob": 0.091
+      },
+      {
+        "label": "toasts",
+        "count": 1,
+        "prob": 0.045
+      },
+      {
+        "label": "ceremony",
+        "count": 1,
+        "prob": 0.045
+      },
+      {
+        "label": "ceremony_processional",
+        "count": 1,
+        "prob": 0.045
+      },
+      {
+        "label": "ceremony_vows",
+        "count": 1,
+        "prob": 0.045
+      },
+      {
+        "label": "cocktail_hour",
+        "count": 1,
+        "prob": 0.045
+      }
+    ],
+    "first_dance": [
+      {
+        "label": "first_dance",
+        "count": 25,
+        "prob": 0.581
+      },
+      {
+        "label": "speeches",
+        "count": 5,
+        "prob": 0.116
+      },
+      {
+        "label": "cake_cutting",
+        "count": 2,
+        "prob": 0.047
+      },
+      {
+        "label": "reception_entrance",
+        "count": 2,
+        "prob": 0.047
+      },
+      {
+        "label": "cocktail_hour",
+        "count": 2,
+        "prob": 0.047
+      },
+      {
+        "label": "dancing",
+        "count": 2,
+        "prob": 0.047
+      },
+      {
+        "label": "details",
+        "count": 2,
+        "prob": 0.047
+      },
+      {
+        "label": "other",
+        "count": 1,
+        "prob": 0.023
+      },
+      {
+        "label": "establishing",
+        "count": 1,
+        "prob": 0.023
+      },
+      {
+        "label": "toasts",
+        "count": 1,
+        "prob": 0.023
+      }
+    ],
+    "dancing": [
+      {
+        "label": "dancing",
+        "count": 37,
+        "prob": 0.638
+      },
+      {
+        "label": "first_dance",
+        "count": 8,
+        "prob": 0.138
+      },
+      {
+        "label": "speeches",
+        "count": 3,
+        "prob": 0.052
+      },
+      {
+        "label": "cake_cutting",
+        "count": 2,
+        "prob": 0.034
+      },
+      {
+        "label": "cocktail_hour",
+        "count": 2,
+        "prob": 0.034
+      },
+      {
+        "label": "portraits",
+        "count": 2,
+        "prob": 0.034
+      },
+      {
+        "label": "reception_entrance",
+        "count": 2,
+        "prob": 0.034
+      },
+      {
+        "label": "toasts",
+        "count": 1,
+        "prob": 0.017
+      },
+      {
+        "label": "details",
+        "count": 1,
+        "prob": 0.017
+      }
+    ],
+    "transition": [
+      {
+        "label": "send_off",
+        "count": 2,
+        "prob": 0.286
+      },
+      {
+        "label": "portraits",
+        "count": 2,
+        "prob": 0.286
+      },
+      {
+        "label": "establishing",
+        "count": 1,
+        "prob": 0.143
+      },
+      {
+        "label": "transition",
+        "count": 1,
+        "prob": 0.143
+      },
+      {
+        "label": "cake_cutting",
+        "count": 1,
+        "prob": 0.143
+      }
+    ]
+  },
+  "never_observed_transitions": [
+    {
+      "from": "cake_cutting",
+      "to": "ceremony"
+    },
+    {
+      "from": "cake_cutting",
+      "to": "ceremony_processional"
+    },
+    {
+      "from": "cake_cutting",
+      "to": "ceremony_recessional"
+    },
+    {
+      "from": "cake_cutting",
+      "to": "ceremony_vows"
+    },
+    {
+      "from": "cake_cutting",
+      "to": "cocktail_hour"
+    },
+    {
+      "from": "cake_cutting",
+      "to": "details"
+    },
+    {
+      "from": "cake_cutting",
+      "to": "establishing"
+    },
+    {
+      "from": "cake_cutting",
+      "to": "first_look"
+    },
+    {
+      "from": "cake_cutting",
+      "to": "getting_ready"
+    },
+    {
+      "from": "cake_cutting",
+      "to": "portraits"
+    },
+    {
+      "from": "cake_cutting",
+      "to": "toasts"
+    },
+    {
+      "from": "ceremony",
+      "to": "cake_cutting"
+    },
+    {
+      "from": "ceremony",
+      "to": "dancing"
+    },
+    {
+      "from": "ceremony",
+      "to": "details"
+    },
+    {
+      "from": "ceremony",
+      "to": "first_dance"
+    },
+    {
+      "from": "ceremony",
+      "to": "first_look"
+    },
+    {
+      "from": "ceremony",
+      "to": "getting_ready"
+    },
+    {
+      "from": "ceremony",
+      "to": "reception_entrance"
+    },
+    {
+      "from": "ceremony",
+      "to": "send_off"
+    },
+    {
+      "from": "ceremony",
+      "to": "speeches"
+    },
+    {
+      "from": "ceremony",
+      "to": "toasts"
+    },
+    {
+      "from": "ceremony",
+      "to": "transition"
+    },
+    {
+      "from": "ceremony_processional",
+      "to": "cake_cutting"
+    },
+    {
+      "from": "ceremony_processional",
+      "to": "dancing"
+    },
+    {
+      "from": "ceremony_processional",
+      "to": "first_dance"
+    },
+    {
+      "from": "ceremony_processional",
+      "to": "other"
+    },
+    {
+      "from": "ceremony_processional",
+      "to": "reception_entrance"
+    },
+    {
+      "from": "ceremony_processional",
+      "to": "send_off"
+    },
+    {
+      "from": "ceremony_processional",
+      "to": "speeches"
+    },
+    {
+      "from": "ceremony_processional",
+      "to": "toasts"
+    },
+    {
+      "from": "ceremony_processional",
+      "to": "transition"
+    },
+    {
+      "from": "ceremony_recessional",
+      "to": "cake_cutting"
+    },
+    {
+      "from": "ceremony_recessional",
+      "to": "ceremony"
+    },
+    {
+      "from": "ceremony_recessional",
+      "to": "ceremony_processional"
+    },
+    {
+      "from": "ceremony_recessional",
+      "to": "ceremony_vows"
+    },
+    {
+      "from": "ceremony_recessional",
+      "to": "dancing"
+    },
+    {
+      "from": "ceremony_recessional",
+      "to": "details"
+    },
+    {
+      "from": "ceremony_recessional",
+      "to": "establishing"
+    },
+    {
+      "from": "ceremony_recessional",
+      "to": "first_dance"
+    },
+    {
+      "from": "ceremony_recessional",
+      "to": "first_look"
+    },
+    {
+      "from": "ceremony_recessional",
+      "to": "getting_ready"
+    },
+    {
+      "from": "ceremony_recessional",
+      "to": "send_off"
+    },
+    {
+      "from": "ceremony_recessional",
+      "to": "speeches"
+    },
+    {
+      "from": "ceremony_recessional",
+      "to": "toasts"
+    },
+    {
+      "from": "ceremony_recessional",
+      "to": "transition"
+    },
+    {
+      "from": "ceremony_vows",
+      "to": "cake_cutting"
+    },
+    {
+      "from": "ceremony_vows",
+      "to": "dancing"
+    },
+    {
+      "from": "ceremony_vows",
+      "to": "first_dance"
+    },
+    {
+      "from": "ceremony_vows",
+      "to": "first_look"
+    },
+    {
+      "from": "ceremony_vows",
+      "to": "getting_ready"
+    },
+    {
+      "from": "ceremony_vows",
+      "to": "other"
+    },
+    {
+      "from": "ceremony_vows",
+      "to": "reception_entrance"
+    },
+    {
+      "from": "ceremony_vows",
+      "to": "send_off"
+    },
+    {
+      "from": "ceremony_vows",
+      "to": "speeches"
+    },
+    {
+      "from": "ceremony_vows",
+      "to": "toasts"
+    },
+    {
+      "from": "ceremony_vows",
+      "to": "transition"
+    },
+    {
+      "from": "cocktail_hour",
+      "to": "cake_cutting"
+    },
+    {
+      "from": "cocktail_hour",
+      "to": "ceremony_recessional"
+    },
+    {
+      "from": "cocktail_hour",
+      "to": "ceremony_vows"
+    },
+    {
+      "from": "cocktail_hour",
+      "to": "first_look"
+    },
+    {
+      "from": "cocktail_hour",
+      "to": "getting_ready"
+    },
+    {
+      "from": "cocktail_hour",
+      "to": "send_off"
+    },
+    {
+      "from": "cocktail_hour",
+      "to": "transition"
+    },
+    {
+      "from": "dancing",
+      "to": "ceremony"
+    },
+    {
+      "from": "dancing",
+      "to": "ceremony_processional"
+    },
+    {
+      "from": "dancing",
+      "to": "ceremony_recessional"
+    },
+    {
+      "from": "dancing",
+      "to": "ceremony_vows"
+    },
+    {
+      "from": "dancing",
+      "to": "details"
+    },
+    {
+      "from": "dancing",
+      "to": "first_look"
+    },
+    {
+      "from": "dancing",
+      "to": "getting_ready"
+    },
+    {
+      "from": "dancing",
+      "to": "toasts"
+    },
+    {
+      "from": "dancing",
+      "to": "transition"
+    },
+    {
+      "from": "details",
+      "to": "ceremony_processional"
+    },
+    {
+      "from": "details",
+      "to": "ceremony_recessional"
+    },
+    {
+      "from": "details",
+      "to": "ceremony_vows"
+    },
+    {
+      "from": "details",
+      "to": "cocktail_hour"
+    },
+    {
+      "from": "details",
+      "to": "establishing"
+    },
+    {
+      "from": "details",
+      "to": "send_off"
+    },
+    {
+      "from": "details",
+      "to": "transition"
+    },
+    {
+      "from": "establishing",
+      "to": "ceremony_recessional"
+    },
+    {
+      "from": "establishing",
+      "to": "ceremony_vows"
+    },
+    {
+      "from": "establishing",
+      "to": "dancing"
+    },
+    {
+      "from": "establishing",
+      "to": "details"
+    },
+    {
+      "from": "establishing",
+      "to": "reception_entrance"
+    },
+    {
+      "from": "establishing",
+      "to": "send_off"
+    },
+    {
+      "from": "establishing",
+      "to": "speeches"
+    },
+    {
+      "from": "establishing",
+      "to": "toasts"
+    },
+    {
+      "from": "first_dance",
+      "to": "cake_cutting"
+    },
+    {
+      "from": "first_dance",
+      "to": "ceremony"
+    },
+    {
+      "from": "first_dance",
+      "to": "ceremony_processional"
+    },
+    {
+      "from": "first_dance",
+      "to": "ceremony_recessional"
+    },
+    {
+      "from": "first_dance",
+      "to": "ceremony_vows"
+    },
+    {
+      "from": "first_dance",
+      "to": "details"
+    },
+    {
+      "from": "first_dance",
+      "to": "establishing"
+    },
+    {
+      "from": "first_dance",
+      "to": "first_look"
+    },
+    {
+      "from": "first_dance",
+      "to": "getting_ready"
+    },
+    {
+      "from": "first_dance",
+      "to": "other"
+    },
+    {
+      "from": "first_dance",
+      "to": "reception_entrance"
+    },
+    {
+      "from": "first_dance",
+      "to": "transition"
+    },
+    {
+      "from": "first_look",
+      "to": "cake_cutting"
+    },
+    {
+      "from": "first_look",
+      "to": "ceremony_recessional"
+    },
+    {
+      "from": "first_look",
+      "to": "ceremony_vows"
+    },
+    {
+      "from": "first_look",
+      "to": "cocktail_hour"
+    },
+    {
+      "from": "first_look",
+      "to": "dancing"
+    },
+    {
+      "from": "first_look",
+      "to": "details"
+    },
+    {
+      "from": "first_look",
+      "to": "first_dance"
+    },
+    {
+      "from": "first_look",
+      "to": "other"
+    },
+    {
+      "from": "first_look",
+      "to": "reception_entrance"
+    },
+    {
+      "from": "first_look",
+      "to": "send_off"
+    },
+    {
+      "from": "first_look",
+      "to": "speeches"
+    },
+    {
+      "from": "first_look",
+      "to": "toasts"
+    },
+    {
+      "from": "first_look",
+      "to": "transition"
+    },
+    {
+      "from": "getting_ready",
+      "to": "cake_cutting"
+    },
+    {
+      "from": "getting_ready",
+      "to": "ceremony_recessional"
+    },
+    {
+      "from": "getting_ready",
+      "to": "cocktail_hour"
+    },
+    {
+      "from": "getting_ready",
+      "to": "dancing"
+    },
+    {
+      "from": "getting_ready",
+      "to": "first_dance"
+    },
+    {
+      "from": "getting_ready",
+      "to": "other"
+    },
+    {
+      "from": "getting_ready",
+      "to": "reception_entrance"
+    },
+    {
+      "from": "getting_ready",
+      "to": "send_off"
+    },
+    {
+      "from": "getting_ready",
+      "to": "speeches"
+    },
+    {
+      "from": "getting_ready",
+      "to": "toasts"
+    },
+    {
+      "from": "getting_ready",
+      "to": "transition"
+    },
+    {
+      "from": "other",
+      "to": "cake_cutting"
+    },
+    {
+      "from": "other",
+      "to": "ceremony_recessional"
+    },
+    {
+      "from": "other",
+      "to": "ceremony_vows"
+    },
+    {
+      "from": "other",
+      "to": "dancing"
+    },
+    {
+      "from": "other",
+      "to": "first_look"
+    },
+    {
+      "from": "other",
+      "to": "reception_entrance"
+    },
+    {
+      "from": "other",
+      "to": "send_off"
+    },
+    {
+      "from": "other",
+      "to": "transition"
+    },
+    {
+      "from": "portraits",
+      "to": "cake_cutting"
+    },
+    {
+      "from": "portraits",
+      "to": "ceremony"
+    },
+    {
+      "from": "portraits",
+      "to": "ceremony_recessional"
+    },
+    {
+      "from": "portraits",
+      "to": "first_dance"
+    },
+    {
+      "from": "portraits",
+      "to": "getting_ready"
+    },
+    {
+      "from": "portraits",
+      "to": "send_off"
+    },
+    {
+      "from": "portraits",
+      "to": "toasts"
+    },
+    {
+      "from": "reception_entrance",
+      "to": "ceremony"
+    },
+    {
+      "from": "reception_entrance",
+      "to": "ceremony_processional"
+    },
+    {
+      "from": "reception_entrance",
+      "to": "ceremony_recessional"
+    },
+    {
+      "from": "reception_entrance",
+      "to": "ceremony_vows"
+    },
+    {
+      "from": "reception_entrance",
+      "to": "cocktail_hour"
+    },
+    {
+      "from": "reception_entrance",
+      "to": "establishing"
+    },
+    {
+      "from": "reception_entrance",
+      "to": "first_look"
+    },
+    {
+      "from": "reception_entrance",
+      "to": "getting_ready"
+    },
+    {
+      "from": "reception_entrance",
+      "to": "send_off"
+    },
+    {
+      "from": "reception_entrance",
+      "to": "toasts"
+    },
+    {
+      "from": "reception_entrance",
+      "to": "transition"
+    },
+    {
+      "from": "send_off",
+      "to": "cake_cutting"
+    },
+    {
+      "from": "send_off",
+      "to": "ceremony"
+    },
+    {
+      "from": "send_off",
+      "to": "ceremony_processional"
+    },
+    {
+      "from": "send_off",
+      "to": "ceremony_recessional"
+    },
+    {
+      "from": "send_off",
+      "to": "ceremony_vows"
+    },
+    {
+      "from": "send_off",
+      "to": "cocktail_hour"
+    },
+    {
+      "from": "send_off",
+      "to": "dancing"
+    },
+    {
+      "from": "send_off",
+      "to": "details"
+    },
+    {
+      "from": "send_off",
+      "to": "establishing"
+    },
+    {
+      "from": "send_off",
+      "to": "first_dance"
+    },
+    {
+      "from": "send_off",
+      "to": "first_look"
+    },
+    {
+      "from": "send_off",
+      "to": "getting_ready"
+    },
+    {
+      "from": "send_off",
+      "to": "other"
+    },
+    {
+      "from": "send_off",
+      "to": "portraits"
+    },
+    {
+      "from": "send_off",
+      "to": "reception_entrance"
+    },
+    {
+      "from": "send_off",
+      "to": "speeches"
+    },
+    {
+      "from": "send_off",
+      "to": "toasts"
+    },
+    {
+      "from": "speeches",
+      "to": "ceremony"
+    },
+    {
+      "from": "speeches",
+      "to": "ceremony_processional"
+    },
+    {
+      "from": "speeches",
+      "to": "ceremony_recessional"
+    },
+    {
+      "from": "speeches",
+      "to": "ceremony_vows"
+    },
+    {
+      "from": "speeches",
+      "to": "cocktail_hour"
+    },
+    {
+      "from": "speeches",
+      "to": "establishing"
+    },
+    {
+      "from": "speeches",
+      "to": "first_look"
+    },
+    {
+      "from": "speeches",
+      "to": "getting_ready"
+    },
+    {
+      "from": "speeches",
+      "to": "transition"
+    },
+    {
+      "from": "toasts",
+      "to": "ceremony"
+    },
+    {
+      "from": "toasts",
+      "to": "ceremony_processional"
+    },
+    {
+      "from": "toasts",
+      "to": "ceremony_recessional"
+    },
+    {
+      "from": "toasts",
+      "to": "ceremony_vows"
+    },
+    {
+      "from": "toasts",
+      "to": "cocktail_hour"
+    },
+    {
+      "from": "toasts",
+      "to": "first_look"
+    },
+    {
+      "from": "toasts",
+      "to": "getting_ready"
+    },
+    {
+      "from": "toasts",
+      "to": "other"
+    },
+    {
+      "from": "toasts",
+      "to": "portraits"
+    },
+    {
+      "from": "toasts",
+      "to": "send_off"
+    },
+    {
+      "from": "toasts",
+      "to": "transition"
+    },
+    {
+      "from": "transition",
+      "to": "cake_cutting"
+    },
+    {
+      "from": "transition",
+      "to": "ceremony"
+    },
+    {
+      "from": "transition",
+      "to": "ceremony_recessional"
+    },
+    {
+      "from": "transition",
+      "to": "ceremony_vows"
+    },
+    {
+      "from": "transition",
+      "to": "cocktail_hour"
+    },
+    {
+      "from": "transition",
+      "to": "dancing"
+    },
+    {
+      "from": "transition",
+      "to": "details"
+    },
+    {
+      "from": "transition",
+      "to": "establishing"
+    },
+    {
+      "from": "transition",
+      "to": "first_dance"
+    },
+    {
+      "from": "transition",
+      "to": "first_look"
+    },
+    {
+      "from": "transition",
+      "to": "getting_ready"
+    },
+    {
+      "from": "transition",
+      "to": "other"
+    },
+    {
+      "from": "transition",
+      "to": "reception_entrance"
+    },
+    {
+      "from": "transition",
+      "to": "send_off"
+    },
+    {
+      "from": "transition",
+      "to": "speeches"
+    },
+    {
+      "from": "transition",
+      "to": "toasts"
+    }
+  ],
+  "scoring_note": "When sequencing scenes for a new film, prefer a chain that maximizes the product of forward_probs[i][i+1]. If the desired transition is in never_observed_transitions, insert an `establishing` or `transition` slug between them, or pick a different next-scene."
+}
